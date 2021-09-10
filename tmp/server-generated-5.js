@@ -2,10 +2,10 @@
           var railsContext = {"railsEnv":"development","inMailer":false,"i18nLocale":"en","i18nDefaultLocale":"en","rorVersion":"12.3.0","rorPro":false,"href":"http://localhost:3000/hello_world","location":"/hello_world","scheme":"http","host":"localhost","port":3000,"pathname":"/hello_world","search":null,"httpAcceptLanguage":"en-US,en;q=0.9","serverSide":true};
               ReactOnRails.clearHydratedStores();
 
-          var props = {"names":["aaron","ryan","becky"]};
+          var props = {"name":"Stranger"};
           return ReactOnRails.serverRenderReactComponent({
-            name: 'DisplayListOfNames',
-            domNodeId: 'DisplayListOfNames-react-component-2330f219-7b27-4e02-9141-079f874d85b4',
+            name: 'HelloWorld',
+            domNodeId: 'HelloWorld-react-component-f68380b3-17e4-46fd-89e3-e35aea78f8bc',
             props: props,
             trace: true,
             railsContext: railsContext

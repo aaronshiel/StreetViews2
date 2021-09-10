@@ -125,6 +125,103 @@ function clearTimeout() {
 /************************************************************************/
 /******/ ({
 
+/***/ "./app/javascript/bundles/HelloWorld/components/HelloWorld.jsx":
+/*!*********************************************************************!*\
+  !*** ./app/javascript/bundles/HelloWorld/components/HelloWorld.jsx ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/root/StreetViews2/app/javascript/bundles/HelloWorld/components/HelloWorld.jsx",
+    _this = undefined;
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+var HelloWorld = function HelloWorld(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(props.name),
+      _useState2 = _slicedToArray(_useState, 2),
+      name = _useState2[0],
+      setName = _useState2[1];
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 7
+    }
+  }, "Hello, ", name, "!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("hr", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
+    htmlFor: "name",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 9
+    }
+  }, "Say hello to:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    id: "name",
+    type: "text",
+    value: name,
+    onChange: function onChange(e) {
+      return setName(e.target.value);
+    },
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 11
+    }
+  }))));
+};
+
+HelloWorld.propTypes = {
+  name: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string.isRequired // this is passed from the Rails view
+
+};
+/* harmony default export */ __webpack_exports__["default"] = (HelloWorld);
+
+/***/ }),
+
 /***/ "./app/javascript/packs/hello-world-bundle.js":
 /*!****************************************************!*\
   !*** ./app/javascript/packs/hello-world-bundle.js ***!
@@ -136,12 +233,14 @@ function clearTimeout() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_on_rails__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-on-rails */ "./node_modules/react-on-rails/node_package/lib/ReactOnRails.js");
 /* harmony import */ var react_on_rails__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_on_rails__WEBPACK_IMPORTED_MODULE_0__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../bundles/HelloWorld/components/HelloWorld'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _bundles_HelloWorld_components_HelloWorld__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../bundles/HelloWorld/components/HelloWorld */ "./app/javascript/bundles/HelloWorld/components/HelloWorld.jsx");
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../bundles/HelloWorld/components/DisplayListOfNames'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
 
  // This is how react_on_rails can see the HelloWorld in the browser.
 
 react_on_rails__WEBPACK_IMPORTED_MODULE_0___default.a.register({
-  HelloWorld: !(function webpackMissingModule() { var e = new Error("Cannot find module '../bundles/HelloWorld/components/HelloWorld'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  HelloWorld: _bundles_HelloWorld_components_HelloWorld__WEBPACK_IMPORTED_MODULE_1__["default"]
 });
 
 /***/ }),
@@ -249,6 +348,815 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
   return to;
 };
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/checkPropTypes.js":
+/*!***************************************************!*\
+  !*** ./node_modules/prop-types/checkPropTypes.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+var printWarning = function printWarning() {};
+
+if (true) {
+  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+
+  var loggedTypeFailures = {};
+  var has = Function.call.bind(Object.prototype.hasOwnProperty);
+
+  printWarning = function printWarning(text) {
+    var message = 'Warning: ' + text;
+
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+}
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */
+
+
+function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+  if (true) {
+    for (var typeSpecName in typeSpecs) {
+      if (has(typeSpecs, typeSpecName)) {
+        var error; // Prop type validation may throw. In case they do, we don't want to
+        // fail the render phase where it didn't fail before. So we log it.
+        // After these have been cleaned up, we'll let them throw.
+
+        try {
+          // This is intentionally an invariant that gets caught. It's the same
+          // behavior as without this statement except with a better message.
+          if (typeof typeSpecs[typeSpecName] !== 'function') {
+            var err = Error((componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' + 'it must be a function, usually from the `prop-types` package, but received `' + _typeof(typeSpecs[typeSpecName]) + '`.');
+            err.name = 'Invariant Violation';
+            throw err;
+          }
+
+          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+        } catch (ex) {
+          error = ex;
+        }
+
+        if (error && !(error instanceof Error)) {
+          printWarning((componentName || 'React class') + ': type specification of ' + location + ' `' + typeSpecName + '` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a ' + _typeof(error) + '. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).');
+        }
+
+        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+          // Only monitor this failure once because there tends to be a lot of the
+          // same error.
+          loggedTypeFailures[error.message] = true;
+          var stack = getStack ? getStack() : '';
+          printWarning('Failed ' + location + ' type: ' + error.message + (stack != null ? stack : ''));
+        }
+      }
+    }
+  }
+}
+/**
+ * Resets warning cache when testing.
+ *
+ * @private
+ */
+
+
+checkPropTypes.resetWarningCache = function () {
+  if (true) {
+    loggedTypeFailures = {};
+  }
+};
+
+module.exports = checkPropTypes;
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/factoryWithTypeCheckers.js":
+/*!************************************************************!*\
+  !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+
+var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+
+var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+
+var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
+
+var has = Function.call.bind(Object.prototype.hasOwnProperty);
+
+var printWarning = function printWarning() {};
+
+if (true) {
+  printWarning = function printWarning(text) {
+    var message = 'Warning: ' + text;
+
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+}
+
+function emptyFunctionThatReturnsNull() {
+  return null;
+}
+
+module.exports = function (isValidElement, throwOnDirectAccess) {
+  /* global Symbol */
+  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+  /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */
+
+  function getIteratorFn(maybeIterable) {
+    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+
+    if (typeof iteratorFn === 'function') {
+      return iteratorFn;
+    }
+  }
+  /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */
+
+
+  var ANONYMOUS = '<<anonymous>>'; // Important!
+  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+
+  var ReactPropTypes = {
+    array: createPrimitiveTypeChecker('array'),
+    bool: createPrimitiveTypeChecker('boolean'),
+    func: createPrimitiveTypeChecker('function'),
+    number: createPrimitiveTypeChecker('number'),
+    object: createPrimitiveTypeChecker('object'),
+    string: createPrimitiveTypeChecker('string'),
+    symbol: createPrimitiveTypeChecker('symbol'),
+    any: createAnyTypeChecker(),
+    arrayOf: createArrayOfTypeChecker,
+    element: createElementTypeChecker(),
+    elementType: createElementTypeTypeChecker(),
+    instanceOf: createInstanceTypeChecker,
+    node: createNodeChecker(),
+    objectOf: createObjectOfTypeChecker,
+    oneOf: createEnumTypeChecker,
+    oneOfType: createUnionTypeChecker,
+    shape: createShapeTypeChecker,
+    exact: createStrictShapeTypeChecker
+  };
+  /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */
+
+  /*eslint-disable no-self-compare*/
+
+  function is(x, y) {
+    // SameValue algorithm
+    if (x === y) {
+      // Steps 1-5, 7-10
+      // Steps 6.b-6.e: +0 != -0
+      return x !== 0 || 1 / x === 1 / y;
+    } else {
+      // Step 6.a: NaN == NaN
+      return x !== x && y !== y;
+    }
+  }
+  /*eslint-enable no-self-compare*/
+
+  /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */
+
+
+  function PropTypeError(message) {
+    this.message = message;
+    this.stack = '';
+  } // Make `instanceof Error` still work for returned errors.
+
+
+  PropTypeError.prototype = Error.prototype;
+
+  function createChainableTypeChecker(validate) {
+    if (true) {
+      var manualPropTypeCallCache = {};
+      var manualPropTypeWarningCount = 0;
+    }
+
+    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+      componentName = componentName || ANONYMOUS;
+      propFullName = propFullName || propName;
+
+      if (secret !== ReactPropTypesSecret) {
+        if (throwOnDirectAccess) {
+          // New behavior only for users of `prop-types` package
+          var err = new Error('Calling PropTypes validators directly is not supported by the `prop-types` package. ' + 'Use `PropTypes.checkPropTypes()` to call them. ' + 'Read more at http://fb.me/use-check-prop-types');
+          err.name = 'Invariant Violation';
+          throw err;
+        } else if ( true && typeof console !== 'undefined') {
+          // Old behavior for people using React.PropTypes
+          var cacheKey = componentName + ':' + propName;
+
+          if (!manualPropTypeCallCache[cacheKey] && // Avoid spamming the console because they are often not actionable except for lib authors
+          manualPropTypeWarningCount < 3) {
+            printWarning('You are manually calling a React.PropTypes validation ' + 'function for the `' + propFullName + '` prop on `' + componentName + '`. This is deprecated ' + 'and will throw in the standalone `prop-types` package. ' + 'You may be seeing this warning due to a third-party PropTypes ' + 'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.');
+            manualPropTypeCallCache[cacheKey] = true;
+            manualPropTypeWarningCount++;
+          }
+        }
+      }
+
+      if (props[propName] == null) {
+        if (isRequired) {
+          if (props[propName] === null) {
+            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+          }
+
+          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+        }
+
+        return null;
+      } else {
+        return validate(props, propName, componentName, location, propFullName);
+      }
+    }
+
+    var chainedCheckType = checkType.bind(null, false);
+    chainedCheckType.isRequired = checkType.bind(null, true);
+    return chainedCheckType;
+  }
+
+  function createPrimitiveTypeChecker(expectedType) {
+    function validate(props, propName, componentName, location, propFullName, secret) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+
+      if (propType !== expectedType) {
+        // `propValue` being instance of, say, date/regexp, pass the 'object'
+        // check, but we can offer a more precise error message here rather than
+        // 'of type `object`'.
+        var preciseType = getPreciseType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+      }
+
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function createAnyTypeChecker() {
+    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+  }
+
+  function createArrayOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+      }
+
+      var propValue = props[propName];
+
+      if (!Array.isArray(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+      }
+
+      for (var i = 0; i < propValue.length; i++) {
+        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+
+        if (error instanceof Error) {
+          return error;
+        }
+      }
+
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+
+      if (!isValidElement(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+      }
+
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+
+      if (!ReactIs.isValidElementType(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
+      }
+
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function createInstanceTypeChecker(expectedClass) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!(props[propName] instanceof expectedClass)) {
+        var expectedClassName = expectedClass.name || ANONYMOUS;
+        var actualClassName = getClassName(props[propName]);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+      }
+
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function createEnumTypeChecker(expectedValues) {
+    if (!Array.isArray(expectedValues)) {
+      if (true) {
+        if (arguments.length > 1) {
+          printWarning('Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' + 'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).');
+        } else {
+          printWarning('Invalid argument supplied to oneOf, expected an array.');
+        }
+      }
+
+      return emptyFunctionThatReturnsNull;
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+
+      for (var i = 0; i < expectedValues.length; i++) {
+        if (is(propValue, expectedValues[i])) {
+          return null;
+        }
+      }
+
+      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+        var type = getPreciseType(value);
+
+        if (type === 'symbol') {
+          return String(value);
+        }
+
+        return value;
+      });
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function createObjectOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+      }
+
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+      }
+
+      for (var key in propValue) {
+        if (has(propValue, key)) {
+          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+
+          if (error instanceof Error) {
+            return error;
+          }
+        }
+      }
+
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function createUnionTypeChecker(arrayOfTypeCheckers) {
+    if (!Array.isArray(arrayOfTypeCheckers)) {
+       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : undefined;
+      return emptyFunctionThatReturnsNull;
+    }
+
+    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+      var checker = arrayOfTypeCheckers[i];
+
+      if (typeof checker !== 'function') {
+        printWarning('Invalid argument supplied to oneOfType. Expected an array of check functions, but ' + 'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.');
+        return emptyFunctionThatReturnsNull;
+      }
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+        var checker = arrayOfTypeCheckers[i];
+
+        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+          return null;
+        }
+      }
+
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function createNodeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!isNode(props[propName])) {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+      }
+
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function createShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+
+      for (var key in shapeTypes) {
+        var checker = shapeTypes[key];
+
+        if (!checker) {
+          continue;
+        }
+
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+
+        if (error) {
+          return error;
+        }
+      }
+
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function createStrictShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      } // We need to check all keys in case some are required but missing from
+      // props.
+
+
+      var allKeys = assign({}, props[propName], shapeTypes);
+
+      for (var key in allKeys) {
+        var checker = shapeTypes[key];
+
+        if (!checker) {
+          return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' + '\nBad object: ' + JSON.stringify(props[propName], null, '  ') + '\nValid keys: ' + JSON.stringify(Object.keys(shapeTypes), null, '  '));
+        }
+
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+
+        if (error) {
+          return error;
+        }
+      }
+
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function isNode(propValue) {
+    switch (_typeof(propValue)) {
+      case 'number':
+      case 'string':
+      case 'undefined':
+        return true;
+
+      case 'boolean':
+        return !propValue;
+
+      case 'object':
+        if (Array.isArray(propValue)) {
+          return propValue.every(isNode);
+        }
+
+        if (propValue === null || isValidElement(propValue)) {
+          return true;
+        }
+
+        var iteratorFn = getIteratorFn(propValue);
+
+        if (iteratorFn) {
+          var iterator = iteratorFn.call(propValue);
+          var step;
+
+          if (iteratorFn !== propValue.entries) {
+            while (!(step = iterator.next()).done) {
+              if (!isNode(step.value)) {
+                return false;
+              }
+            }
+          } else {
+            // Iterator will provide entry [k,v] tuples rather than values.
+            while (!(step = iterator.next()).done) {
+              var entry = step.value;
+
+              if (entry) {
+                if (!isNode(entry[1])) {
+                  return false;
+                }
+              }
+            }
+          }
+        } else {
+          return false;
+        }
+
+        return true;
+
+      default:
+        return false;
+    }
+  }
+
+  function isSymbol(propType, propValue) {
+    // Native Symbol.
+    if (propType === 'symbol') {
+      return true;
+    } // falsy value can't be a Symbol
+
+
+    if (!propValue) {
+      return false;
+    } // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+
+
+    if (propValue['@@toStringTag'] === 'Symbol') {
+      return true;
+    } // Fallback for non-spec compliant Symbols which are polyfilled.
+
+
+    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+      return true;
+    }
+
+    return false;
+  } // Equivalent of `typeof` but with special handling for array and regexp.
+
+
+  function getPropType(propValue) {
+    var propType = _typeof(propValue);
+
+    if (Array.isArray(propValue)) {
+      return 'array';
+    }
+
+    if (propValue instanceof RegExp) {
+      // Old webkits (at least until Android 4.0) return 'function' rather than
+      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+      // passes PropTypes.object.
+      return 'object';
+    }
+
+    if (isSymbol(propType, propValue)) {
+      return 'symbol';
+    }
+
+    return propType;
+  } // This handles more types than `getPropType`. Only used for error messages.
+  // See `createPrimitiveTypeChecker`.
+
+
+  function getPreciseType(propValue) {
+    if (typeof propValue === 'undefined' || propValue === null) {
+      return '' + propValue;
+    }
+
+    var propType = getPropType(propValue);
+
+    if (propType === 'object') {
+      if (propValue instanceof Date) {
+        return 'date';
+      } else if (propValue instanceof RegExp) {
+        return 'regexp';
+      }
+    }
+
+    return propType;
+  } // Returns a string that is postfixed to a warning about an invalid type.
+  // For example, "undefined" or "of type array"
+
+
+  function getPostfixForTypeWarning(value) {
+    var type = getPreciseType(value);
+
+    switch (type) {
+      case 'array':
+      case 'object':
+        return 'an ' + type;
+
+      case 'boolean':
+      case 'date':
+      case 'regexp':
+        return 'a ' + type;
+
+      default:
+        return type;
+    }
+  } // Returns class name of the object, if any.
+
+
+  function getClassName(propValue) {
+    if (!propValue.constructor || !propValue.constructor.name) {
+      return ANONYMOUS;
+    }
+
+    return propValue.constructor.name;
+  }
+
+  ReactPropTypes.checkPropTypes = checkPropTypes;
+  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+  ReactPropTypes.PropTypes = ReactPropTypes;
+  return ReactPropTypes;
+};
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/prop-types/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+if (true) {
+  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js"); // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+
+
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
+} else {}
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
@@ -370,8 +1278,8 @@ if (true) {
     var REACT_OFFSCREEN_TYPE = 0xeae2;
     var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
 
-    if (typeof Symbol === 'function' && Symbol.for) {
-      var symbolFor = Symbol.for;
+    if (typeof Symbol === 'function' && Symbol["for"]) {
+      var symbolFor = Symbol["for"];
       REACT_ELEMENT_TYPE = symbolFor('react.element');
       REACT_PORTAL_TYPE = symbolFor('react.portal');
       REACT_FRAGMENT_TYPE = symbolFor('react.fragment');
@@ -1736,7 +2644,7 @@ if (true) {
           var firstRenderPhaseUpdate = renderPhaseUpdates.get(queue);
 
           if (firstRenderPhaseUpdate !== undefined) {
-            renderPhaseUpdates.delete(queue);
+            renderPhaseUpdates["delete"](queue);
             var newState = workInProgressHook.memoizedState;
             var update = firstRenderPhaseUpdate;
 
@@ -2500,7 +3408,7 @@ if (true) {
       checked: 'checked',
       children: 'children',
       cite: 'cite',
-      class: 'className',
+      "class": 'className',
       classid: 'classID',
       classname: 'className',
       cols: 'cols',
@@ -2515,7 +3423,7 @@ if (true) {
       dangerouslysetinnerhtml: 'dangerouslySetInnerHTML',
       data: 'data',
       datetime: 'dateTime',
-      default: 'default',
+      "default": 'default',
       defaultchecked: 'defaultChecked',
       defaultvalue: 'defaultValue',
       defer: 'defer',
@@ -2527,7 +3435,7 @@ if (true) {
       draggable: 'draggable',
       enctype: 'encType',
       enterkeyhint: 'enterKeyHint',
-      for: 'htmlFor',
+      "for": 'htmlFor',
       form: 'form',
       formmethod: 'formMethod',
       formaction: 'formAction',
@@ -2744,7 +3652,7 @@ if (true) {
       imagerendering: 'imageRendering',
       'image-rendering': 'imageRendering',
       in2: 'in2',
-      in: 'in',
+      "in": 'in',
       inlist: 'inlist',
       intercept: 'intercept',
       k1: 'k1',
@@ -2884,7 +3792,7 @@ if (true) {
       'text-rendering': 'textRendering',
       to: 'to',
       transform: 'transform',
-      typeof: 'typeof',
+      "typeof": 'typeof',
       u1: 'u1',
       u2: 'u2',
       underlineposition: 'underlinePosition',
@@ -5215,8 +6123,8 @@ if (true) {
     var REACT_OFFSCREEN_TYPE = 0xeae2;
     var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
 
-    if (typeof Symbol === 'function' && Symbol.for) {
-      var symbolFor = Symbol.for;
+    if (typeof Symbol === 'function' && Symbol["for"]) {
+      var symbolFor = Symbol["for"];
       REACT_ELEMENT_TYPE = symbolFor('react.element');
       REACT_PORTAL_TYPE = symbolFor('react.portal');
       REACT_FRAGMENT_TYPE = symbolFor('react.fragment');
@@ -5637,7 +6545,7 @@ if (true) {
 
         do {
           info += describeFiber(node);
-          node = node.return;
+          node = node["return"];
         } while (node);
 
         return info;
@@ -7266,7 +8174,7 @@ if (true) {
       checked: 'checked',
       children: 'children',
       cite: 'cite',
-      class: 'className',
+      "class": 'className',
       classid: 'classID',
       classname: 'className',
       cols: 'cols',
@@ -7281,7 +8189,7 @@ if (true) {
       dangerouslysetinnerhtml: 'dangerouslySetInnerHTML',
       data: 'data',
       datetime: 'dateTime',
-      default: 'default',
+      "default": 'default',
       defaultchecked: 'defaultChecked',
       defaultvalue: 'defaultValue',
       defer: 'defer',
@@ -7293,7 +8201,7 @@ if (true) {
       draggable: 'draggable',
       enctype: 'encType',
       enterkeyhint: 'enterKeyHint',
-      for: 'htmlFor',
+      "for": 'htmlFor',
       form: 'form',
       formmethod: 'formMethod',
       formaction: 'formAction',
@@ -7510,7 +8418,7 @@ if (true) {
       imagerendering: 'imageRendering',
       'image-rendering': 'imageRendering',
       in2: 'in2',
-      in: 'in',
+      "in": 'in',
       inlist: 'inlist',
       intercept: 'intercept',
       k1: 'k1',
@@ -7650,7 +8558,7 @@ if (true) {
       'text-rendering': 'textRendering',
       to: 'to',
       transform: 'transform',
-      typeof: 'typeof',
+      "typeof": 'typeof',
       u1: 'u1',
       u2: 'u2',
       underlineposition: 'underlinePosition',
@@ -8698,14 +9606,14 @@ if (true) {
             // This is an insertion or in-progress hydration. The nearest possible
             // mounted fiber is the parent but we need to continue to figure out
             // if that one is still mounted.
-            nearestMounted = node.return;
+            nearestMounted = node["return"];
           }
 
-          nextNode = node.return;
+          nextNode = node["return"];
         } while (nextNode);
       } else {
-        while (node.return) {
-          node = node.return;
+        while (node["return"]) {
+          node = node["return"];
         }
       }
 
@@ -8807,7 +9715,7 @@ if (true) {
       var b = alternate;
 
       while (true) {
-        var parentA = a.return;
+        var parentA = a["return"];
 
         if (parentA === null) {
           // We're at the root.
@@ -8821,7 +9729,7 @@ if (true) {
           // happens when a Suspense component is hidden. An extra fragment fiber
           // is inserted in between the Suspense fiber and its children. Skip
           // over this extra fragment fiber and proceed to the next parent.
-          var nextParent = parentA.return;
+          var nextParent = parentA["return"];
 
           if (nextParent !== null) {
             a = b = nextParent;
@@ -8863,7 +9771,7 @@ if (true) {
           }
         }
 
-        if (a.return !== b.return) {
+        if (a["return"] !== b["return"]) {
           // The return pointer of A and the return pointer of B point to different
           // fibers. We assume that return pointers never criss-cross, so A must
           // belong to the child set of A.return, and B must belong to the child
@@ -8965,7 +9873,7 @@ if (true) {
         if (node.tag === HostComponent || node.tag === HostText) {
           return node;
         } else if (node.child) {
-          node.child.return = node;
+          node.child["return"] = node;
           node = node.child;
           continue;
         }
@@ -8975,14 +9883,14 @@ if (true) {
         }
 
         while (!node.sibling) {
-          if (!node.return || node.return === currentParent) {
+          if (!node["return"] || node["return"] === currentParent) {
             return null;
           }
 
-          node = node.return;
+          node = node["return"];
         }
 
-        node.sibling.return = node.return;
+        node.sibling["return"] = node["return"];
         node = node.sibling;
       } // Flow needs the return null here, but ESLint complains about it.
       // eslint-disable-next-line no-unreachable
@@ -9005,7 +9913,7 @@ if (true) {
         if (node.tag === HostComponent || node.tag === HostText || enableFundamentalAPI) {
           return node;
         } else if (node.child && node.tag !== HostPortal) {
-          node.child.return = node;
+          node.child["return"] = node;
           node = node.child;
           continue;
         }
@@ -9015,14 +9923,14 @@ if (true) {
         }
 
         while (!node.sibling) {
-          if (!node.return || node.return === currentParent) {
+          if (!node["return"] || node["return"] === currentParent) {
             return null;
           }
 
-          node = node.return;
+          node = node["return"];
         }
 
-        node.sibling.return = node.return;
+        node.sibling["return"] = node["return"];
         node = node.sibling;
       } // Flow needs the return null here, but ESLint complains about it.
       // eslint-disable-next-line no-unreachable
@@ -9040,7 +9948,7 @@ if (true) {
           return true;
         }
 
-        node = node.return;
+        node = node["return"];
       }
 
       return false;
@@ -9133,7 +10041,7 @@ if (true) {
         case 'pointerout':
           {
             var pointerId = nativeEvent.pointerId;
-            queuedPointers.delete(pointerId);
+            queuedPointers["delete"](pointerId);
             break;
           }
 
@@ -9141,7 +10049,7 @@ if (true) {
         case 'lostpointercapture':
           {
             var _pointerId = nativeEvent.pointerId;
-            queuedPointerCaptures.delete(_pointerId);
+            queuedPointerCaptures["delete"](_pointerId);
             break;
           }
       }
@@ -9298,7 +10206,7 @@ if (true) {
 
     function attemptReplayContinuousQueuedEventInMap(queuedEvent, key, map) {
       if (attemptReplayContinuousQueuedEvent(queuedEvent)) {
-        map.delete(key);
+        map["delete"](key);
       }
     }
 
@@ -11474,8 +12382,8 @@ if (true) {
             // is 2, the property `which` does not represent an emoji correctly.
             // In such a case, we directly return the `char` property instead of
             // using `which`.
-            if (nativeEvent.char && nativeEvent.char.length > 1) {
-              return nativeEvent.char;
+            if (nativeEvent["char"] && nativeEvent["char"].length > 1) {
+              return nativeEvent["char"];
             } else if (nativeEvent.which) {
               return String.fromCharCode(nativeEvent.which);
             }
@@ -12999,7 +13907,7 @@ if (true) {
                 // Normally portals handle their own events all the way down to the root.
                 // So we should be able to stop now. However, we don't know if this portal
                 // was part of *our* root.
-                var grandNode = node.return;
+                var grandNode = node["return"];
 
                 while (grandNode !== null) {
                   var grandTag = grandNode.tag;
@@ -13015,7 +13923,7 @@ if (true) {
                     }
                   }
 
-                  grandNode = grandNode.return;
+                  grandNode = grandNode["return"];
                 }
               } // Now we need to find it's corresponding host fiber in the other
               // tree. To do this we can use getClosestInstanceFromNode, but we
@@ -13042,7 +13950,7 @@ if (true) {
               }
             }
 
-            node = node.return;
+            node = node["return"];
           }
         }
       }
@@ -13091,7 +13999,7 @@ if (true) {
           break;
         }
 
-        instance = instance.return;
+        instance = instance["return"];
       }
 
       return listeners;
@@ -13129,7 +14037,7 @@ if (true) {
           }
         }
 
-        instance = instance.return;
+        instance = instance["return"];
       }
 
       return listeners;
@@ -13141,7 +14049,7 @@ if (true) {
       }
 
       do {
-        inst = inst.return; // TODO: If this is a HostRoot we might want to bail out.
+        inst = inst["return"]; // TODO: If this is a HostRoot we might want to bail out.
         // That is depending on if we want nested subtrees (layers) to bubble
         // events to their parent. We could also go through parentNode on the
         // host node but that wouldn't work for React Native and doesn't let us
@@ -13239,7 +14147,7 @@ if (true) {
           }
         }
 
-        instance = instance.return;
+        instance = instance["return"];
       }
 
       if (listeners.length !== 0) {
@@ -14110,7 +15018,7 @@ if (true) {
             }
           } else if (propKey === STYLE) {
             // $FlowFixMe - Should be inferred as not undefined.
-            extraAttributeNames.delete(propKey);
+            extraAttributeNames["delete"](propKey);
 
             if (canDiffStyleForHydrationWarning) {
               var expectedStyle = createDangerousStringForStyles(nextProp);
@@ -14122,7 +15030,7 @@ if (true) {
             }
           } else if (isCustomComponentTag) {
             // $FlowFixMe - Should be inferred as not undefined.
-            extraAttributeNames.delete(propKey.toLowerCase());
+            extraAttributeNames["delete"](propKey.toLowerCase());
             serverValue = getValueForAttribute(domElement, propKey, nextProp);
 
             if (nextProp !== serverValue) {
@@ -14133,7 +15041,7 @@ if (true) {
 
             if (propertyInfo !== null) {
               // $FlowFixMe - Should be inferred as not undefined.
-              extraAttributeNames.delete(propertyInfo.attributeName);
+              extraAttributeNames["delete"](propertyInfo.attributeName);
               serverValue = getValueForProperty(domElement, propKey, nextProp, propertyInfo);
             } else {
               var ownNamespace = parentNamespace;
@@ -14144,7 +15052,7 @@ if (true) {
 
               if (ownNamespace === HTML_NAMESPACE$1) {
                 // $FlowFixMe - Should be inferred as not undefined.
-                extraAttributeNames.delete(propKey.toLowerCase());
+                extraAttributeNames["delete"](propKey.toLowerCase());
               } else {
                 var standardName = getPossibleStandardName(propKey);
 
@@ -14156,11 +15064,11 @@ if (true) {
                   // So we'll skip the misleading extra mismatch warning in this case.
                   isMismatchDueToBadCasing = true; // $FlowFixMe - Should be inferred as not undefined.
 
-                  extraAttributeNames.delete(standardName);
+                  extraAttributeNames["delete"](standardName);
                 } // $FlowFixMe - Should be inferred as not undefined.
 
 
-                extraAttributeNames.delete(propKey);
+                extraAttributeNames["delete"](propKey);
               }
 
               serverValue = getValueForAttribute(domElement, propKey, nextProp);
@@ -15615,7 +16523,7 @@ if (true) {
               }
           }
 
-          node = node.return;
+          node = node["return"];
         } while (node !== null);
 
         {
@@ -15937,7 +16845,7 @@ if (true) {
             maybeStrictRoot = node;
           }
 
-          node = node.return;
+          node = node["return"];
         }
 
         return maybeStrictRoot;
@@ -16272,7 +17180,7 @@ if (true) {
           break;
         }
 
-        node = node.return;
+        node = node["return"];
       }
     }
 
@@ -16281,7 +17189,7 @@ if (true) {
 
       if (fiber !== null) {
         // Set the return pointer of the child to the work-in-progress fiber.
-        fiber.return = workInProgress;
+        fiber["return"] = workInProgress;
       }
 
       while (fiber !== null) {
@@ -16315,7 +17223,7 @@ if (true) {
                 alternate.lanes = mergeLanes(alternate.lanes, renderLanes);
               }
 
-              scheduleWorkOnParentPath(fiber.return, renderLanes); // Mark the updated lanes on the list, too.
+              scheduleWorkOnParentPath(fiber["return"], renderLanes); // Mark the updated lanes on the list, too.
 
               list.lanes = mergeLanes(list.lanes, renderLanes); // Since we already found a match, we can stop traversing the
               // dependency list.
@@ -16335,7 +17243,7 @@ if (true) {
 
         if (nextFiber !== null) {
           // Set the return pointer of the child to the work-in-progress fiber.
-          nextFiber.return = fiber;
+          nextFiber["return"] = fiber;
         } else {
           // No child. Traverse to next sibling.
           nextFiber = fiber;
@@ -16351,13 +17259,13 @@ if (true) {
 
             if (sibling !== null) {
               // Set the return pointer of the sibling to the work-in-progress fiber.
-              sibling.return = nextFiber.return;
+              sibling["return"] = nextFiber["return"];
               nextFiber = sibling;
               break;
             } // No more siblings. Traverse up.
 
 
-            nextFiber = nextFiber.return;
+            nextFiber = nextFiber["return"];
           }
         }
 
@@ -17882,12 +18790,12 @@ if (true) {
         if (current === null || current.tag !== HostText) {
           // Insert
           var created = createFiberFromText(textContent, returnFiber.mode, lanes);
-          created.return = returnFiber;
+          created["return"] = returnFiber;
           return created;
         } else {
           // Update
           var existing = useFiber(current, textContent);
-          existing.return = returnFiber;
+          existing["return"] = returnFiber;
           return existing;
         }
       }
@@ -17899,7 +18807,7 @@ if (true) {
             // Move based on index
             var existing = useFiber(current, element.props);
             existing.ref = coerceRef(returnFiber, current, element);
-            existing.return = returnFiber;
+            existing["return"] = returnFiber;
             {
               existing._debugSource = element._source;
               existing._debugOwner = element._owner;
@@ -17911,7 +18819,7 @@ if (true) {
 
         var created = createFiberFromElement(element, returnFiber.mode, lanes);
         created.ref = coerceRef(returnFiber, current, element);
-        created.return = returnFiber;
+        created["return"] = returnFiber;
         return created;
       }
 
@@ -17919,12 +18827,12 @@ if (true) {
         if (current === null || current.tag !== HostPortal || current.stateNode.containerInfo !== portal.containerInfo || current.stateNode.implementation !== portal.implementation) {
           // Insert
           var created = createFiberFromPortal(portal, returnFiber.mode, lanes);
-          created.return = returnFiber;
+          created["return"] = returnFiber;
           return created;
         } else {
           // Update
           var existing = useFiber(current, portal.children || []);
-          existing.return = returnFiber;
+          existing["return"] = returnFiber;
           return existing;
         }
       }
@@ -17933,12 +18841,12 @@ if (true) {
         if (current === null || current.tag !== Fragment) {
           // Insert
           var created = createFiberFromFragment(fragment, returnFiber.mode, lanes, key);
-          created.return = returnFiber;
+          created["return"] = returnFiber;
           return created;
         } else {
           // Update
           var existing = useFiber(current, fragment);
-          existing.return = returnFiber;
+          existing["return"] = returnFiber;
           return existing;
         }
       }
@@ -17949,7 +18857,7 @@ if (true) {
           // we can continue to replace it without aborting even if it is not a text
           // node.
           var created = createFiberFromText('' + newChild, returnFiber.mode, lanes);
-          created.return = returnFiber;
+          created["return"] = returnFiber;
           return created;
         }
 
@@ -17960,7 +18868,7 @@ if (true) {
                 var _created = createFiberFromElement(newChild, returnFiber.mode, lanes);
 
                 _created.ref = coerceRef(returnFiber, null, newChild);
-                _created.return = returnFiber;
+                _created["return"] = returnFiber;
                 return _created;
               }
 
@@ -17968,7 +18876,7 @@ if (true) {
               {
                 var _created2 = createFiberFromPortal(newChild, returnFiber.mode, lanes);
 
-                _created2.return = returnFiber;
+                _created2["return"] = returnFiber;
                 return _created2;
               }
           }
@@ -17976,7 +18884,7 @@ if (true) {
           if (isArray$1(newChild) || getIteratorFn(newChild)) {
             var _created3 = createFiberFromFragment(newChild, returnFiber.mode, lanes, null);
 
-            _created3.return = returnFiber;
+            _created3["return"] = returnFiber;
             return _created3;
           }
 
@@ -18257,7 +19165,7 @@ if (true) {
                 // current, that means that we reused the fiber. We need to delete
                 // it from the child list so that we don't add it to the deletion
                 // list.
-                existingChildren.delete(_newFiber2.key === null ? newIdx : _newFiber2.key);
+                existingChildren["delete"](_newFiber2.key === null ? newIdx : _newFiber2.key);
               }
             }
 
@@ -18438,7 +19346,7 @@ if (true) {
                 // current, that means that we reused the fiber. We need to delete
                 // it from the child list so that we don't add it to the deletion
                 // list.
-                existingChildren.delete(_newFiber4.key === null ? newIdx : _newFiber4.key);
+                existingChildren["delete"](_newFiber4.key === null ? newIdx : _newFiber4.key);
               }
             }
 
@@ -18473,7 +19381,7 @@ if (true) {
           // the rest.
           deleteRemainingChildren(returnFiber, currentFirstChild.sibling);
           var existing = useFiber(currentFirstChild, textContent);
-          existing.return = returnFiber;
+          existing["return"] = returnFiber;
           return existing;
         } // The existing first child is not a text node so we need to create one
         // and delete the existing ones.
@@ -18481,7 +19389,7 @@ if (true) {
 
         deleteRemainingChildren(returnFiber, currentFirstChild);
         var created = createFiberFromText(textContent, returnFiber.mode, lanes);
-        created.return = returnFiber;
+        created["return"] = returnFiber;
         return created;
       }
 
@@ -18499,7 +19407,7 @@ if (true) {
                   if (element.type === REACT_FRAGMENT_TYPE) {
                     deleteRemainingChildren(returnFiber, child.sibling);
                     var existing = useFiber(child, element.props.children);
-                    existing.return = returnFiber;
+                    existing["return"] = returnFiber;
                     {
                       existing._debugSource = element._source;
                       existing._debugOwner = element._owner;
@@ -18522,7 +19430,7 @@ if (true) {
                     var _existing3 = useFiber(child, element.props);
 
                     _existing3.ref = coerceRef(returnFiber, child, element);
-                    _existing3.return = returnFiber;
+                    _existing3["return"] = returnFiber;
                     {
                       _existing3._debugSource = element._source;
                       _existing3._debugOwner = element._owner;
@@ -18546,13 +19454,13 @@ if (true) {
 
         if (element.type === REACT_FRAGMENT_TYPE) {
           var created = createFiberFromFragment(element.props.children, returnFiber.mode, lanes, element.key);
-          created.return = returnFiber;
+          created["return"] = returnFiber;
           return created;
         } else {
           var _created4 = createFiberFromElement(element, returnFiber.mode, lanes);
 
           _created4.ref = coerceRef(returnFiber, currentFirstChild, element);
-          _created4.return = returnFiber;
+          _created4["return"] = returnFiber;
           return _created4;
         }
       }
@@ -18568,7 +19476,7 @@ if (true) {
             if (child.tag === HostPortal && child.stateNode.containerInfo === portal.containerInfo && child.stateNode.implementation === portal.implementation) {
               deleteRemainingChildren(returnFiber, child.sibling);
               var existing = useFiber(child, portal.children || []);
-              existing.return = returnFiber;
+              existing["return"] = returnFiber;
               return existing;
             } else {
               deleteRemainingChildren(returnFiber, child);
@@ -18582,7 +19490,7 @@ if (true) {
         }
 
         var created = createFiberFromPortal(portal, returnFiber.mode, lanes);
-        created.return = returnFiber;
+        created["return"] = returnFiber;
         return created;
       } // This API will tag the children with the side-effect of the reconciliation
       // itself. They will be added to the side-effect list as we pass through the
@@ -18696,12 +19604,12 @@ if (true) {
       var currentChild = workInProgress.child;
       var newChild = createWorkInProgress(currentChild, currentChild.pendingProps);
       workInProgress.child = newChild;
-      newChild.return = workInProgress;
+      newChild["return"] = workInProgress;
 
       while (currentChild.sibling !== null) {
         currentChild = currentChild.sibling;
         newChild = newChild.sibling = createWorkInProgress(currentChild, currentChild.pendingProps);
-        newChild.return = workInProgress;
+        newChild["return"] = workInProgress;
       }
 
       newChild.sibling = null;
@@ -18895,7 +19803,7 @@ if (true) {
             return node;
           }
         } else if (node.child !== null) {
-          node.child.return = node;
+          node.child["return"] = node;
           node = node.child;
           continue;
         }
@@ -18905,14 +19813,14 @@ if (true) {
         }
 
         while (node.sibling === null) {
-          if (node.return === null || node.return === row) {
+          if (node["return"] === null || node["return"] === row) {
             return null;
           }
 
-          node = node.return;
+          node = node["return"];
         }
 
-        node.sibling.return = node.return;
+        node.sibling["return"] = node["return"];
         node = node.sibling;
       }
 
@@ -18960,7 +19868,7 @@ if (true) {
       }
       var childToDelete = createFiberFromHostInstanceForDeletion();
       childToDelete.stateNode = instance;
-      childToDelete.return = returnFiber;
+      childToDelete["return"] = returnFiber;
       childToDelete.flags = Deletion; // This might seem like it belongs on progressedFirstDeletion. However,
       // these children are not part of the reconciliation list of children.
       // Even if we abort and rereconcile the children, that will try to hydrate
@@ -19174,10 +20082,10 @@ if (true) {
     }
 
     function popToNextHostParent(fiber) {
-      var parent = fiber.return;
+      var parent = fiber["return"];
 
       while (parent !== null && parent.tag !== HostComponent && parent.tag !== HostRoot && parent.tag !== SuspenseComponent) {
-        parent = parent.return;
+        parent = parent["return"];
       }
 
       hydrationParentFiber = parent;
@@ -21553,7 +22461,7 @@ if (true) {
         }
         var child = createFiberFromTypeAndProps(Component.type, null, nextProps, workInProgress, workInProgress.mode, renderLanes);
         child.ref = workInProgress.ref;
-        child.return = workInProgress;
+        child["return"] = workInProgress;
         workInProgress.child = child;
         return child;
       }
@@ -21588,7 +22496,7 @@ if (true) {
       workInProgress.flags |= PerformedWork;
       var newChild = createWorkInProgress(currentChild, nextProps);
       newChild.ref = workInProgress.ref;
-      newChild.return = workInProgress;
+      newChild["return"] = workInProgress;
       workInProgress.child = newChild;
       return newChild;
     }
@@ -22567,7 +23475,7 @@ if (true) {
         children: primaryChildren
       };
       var primaryChildFragment = createFiberFromOffscreen(primaryChildProps, mode, renderLanes, null);
-      primaryChildFragment.return = workInProgress;
+      primaryChildFragment["return"] = workInProgress;
       workInProgress.child = primaryChildFragment;
       return primaryChildFragment;
     }
@@ -22606,8 +23514,8 @@ if (true) {
         fallbackChildFragment = createFiberFromFragment(fallbackChildren, mode, renderLanes, null);
       }
 
-      primaryChildFragment.return = workInProgress;
-      fallbackChildFragment.return = workInProgress;
+      primaryChildFragment["return"] = workInProgress;
+      fallbackChildFragment["return"] = workInProgress;
       primaryChildFragment.sibling = fallbackChildFragment;
       workInProgress.child = primaryChildFragment;
       return fallbackChildFragment;
@@ -22631,7 +23539,7 @@ if (true) {
         primaryChildFragment.lanes = renderLanes;
       }
 
-      primaryChildFragment.return = workInProgress;
+      primaryChildFragment["return"] = workInProgress;
       primaryChildFragment.sibling = null;
 
       if (currentFallbackChildFragment !== null) {
@@ -22711,8 +23619,8 @@ if (true) {
         fallbackChildFragment.flags |= Placement;
       }
 
-      fallbackChildFragment.return = workInProgress;
-      primaryChildFragment.return = workInProgress;
+      fallbackChildFragment["return"] = workInProgress;
+      primaryChildFragment["return"] = workInProgress;
       primaryChildFragment.sibling = fallbackChildFragment;
       workInProgress.child = primaryChildFragment;
       return fallbackChildFragment;
@@ -22726,7 +23634,7 @@ if (true) {
         alternate.lanes = mergeLanes(alternate.lanes, renderLanes);
       }
 
-      scheduleWorkOnParentPath(fiber.return, renderLanes);
+      scheduleWorkOnParentPath(fiber["return"], renderLanes);
     }
 
     function propagateSuspenseContextChange(workInProgress, firstChild, renderLanes) {
@@ -22750,7 +23658,7 @@ if (true) {
           // the list will propagate the change when it rerenders.
           scheduleWorkOnFiber(node, renderLanes);
         } else if (node.child !== null) {
-          node.child.return = node;
+          node.child["return"] = node;
           node = node.child;
           continue;
         }
@@ -22760,14 +23668,14 @@ if (true) {
         }
 
         while (node.sibling === null) {
-          if (node.return === null || node.return === workInProgress) {
+          if (node["return"] === null || node["return"] === workInProgress) {
             return;
           }
 
-          node = node.return;
+          node = node["return"];
         }
 
-        node.sibling.return = node.return;
+        node.sibling["return"] = node["return"];
         node = node.sibling;
       }
     }
@@ -23179,7 +24087,7 @@ if (true) {
 
     function remountFiber(current, oldWorkInProgress, newWorkInProgress) {
       {
-        var returnFiber = oldWorkInProgress.return;
+        var returnFiber = oldWorkInProgress["return"];
 
         if (returnFiber === null) {
           throw new Error('Cannot swap the root fiber.');
@@ -23192,7 +24100,7 @@ if (true) {
 
         newWorkInProgress.index = oldWorkInProgress.index;
         newWorkInProgress.sibling = oldWorkInProgress.sibling;
-        newWorkInProgress.return = oldWorkInProgress.return;
+        newWorkInProgress["return"] = oldWorkInProgress["return"];
         newWorkInProgress.ref = oldWorkInProgress.ref; // Replace the child/sibling pointers above it.
 
         if (oldWorkInProgress === returnFiber.child) {
@@ -23601,7 +24509,7 @@ if (true) {
           if (node.tag === HostComponent || node.tag === HostText) {
             appendInitialChild(parent, node.stateNode);
           } else if (node.tag === HostPortal) ;else if (node.child !== null) {
-            node.child.return = node;
+            node.child["return"] = node;
             node = node.child;
             continue;
           }
@@ -23611,14 +24519,14 @@ if (true) {
           }
 
           while (node.sibling === null) {
-            if (node.return === null || node.return === workInProgress) {
+            if (node["return"] === null || node["return"] === workInProgress) {
               return;
             }
 
-            node = node.return;
+            node = node["return"];
           }
 
-          node.sibling.return = node.return;
+          node.sibling["return"] = node["return"];
           node = node.sibling;
         }
       };
@@ -24712,7 +25620,7 @@ if (true) {
           // boundary.
 
 
-          _workInProgress = _workInProgress.return;
+          _workInProgress = _workInProgress["return"];
         } while (_workInProgress !== null); // No boundary was found. Fallthrough to error mode.
         // TODO: Use invariant so the message is stripped in prod?
 
@@ -24764,7 +25672,7 @@ if (true) {
             break;
         }
 
-        workInProgress = workInProgress.return;
+        workInProgress = workInProgress["return"];
       } while (workInProgress !== null);
     }
 
@@ -25189,7 +26097,7 @@ if (true) {
               unhideTextInstance(_instance3, node.memoizedProps);
             }
           } else if ((node.tag === OffscreenComponent || node.tag === LegacyHiddenComponent) && node.memoizedState !== null && node !== finishedWork) ;else if (node.child !== null) {
-            node.child.return = node;
+            node.child["return"] = node;
             node = node.child;
             continue;
           }
@@ -25199,14 +26107,14 @@ if (true) {
           }
 
           while (node.sibling === null) {
-            if (node.return === null || node.return === finishedWork) {
+            if (node["return"] === null || node["return"] === finishedWork) {
               return;
             }
 
-            node = node.return;
+            node = node["return"];
           }
 
-          node.sibling.return = node.return;
+          node.sibling["return"] = node["return"];
           node = node.sibling;
         }
       }
@@ -25360,7 +26268,7 @@ if (true) {
         if (node.child !== null && // If we use mutation we drill down into portals using commitUnmount above.
         // If we don't use mutation we drill down into portals here instead.
         node.tag !== HostPortal) {
-          node.child.return = node;
+          node.child["return"] = node;
           node = node.child;
           continue;
         }
@@ -25370,14 +26278,14 @@ if (true) {
         }
 
         while (node.sibling === null) {
-          if (node.return === null || node.return === root) {
+          if (node["return"] === null || node["return"] === root) {
             return;
           }
 
-          node = node.return;
+          node = node["return"];
         }
 
-        node.sibling.return = node.return;
+        node.sibling["return"] = node["return"];
         node = node.sibling;
       }
     }
@@ -25404,7 +26312,7 @@ if (true) {
       fiber.memoizedProps = null;
       fiber.memoizedState = null;
       fiber.pendingProps = null;
-      fiber.return = null;
+      fiber["return"] = null;
       fiber.updateQueue = null;
       {
         fiber._debugOwner = null;
@@ -25412,14 +26320,14 @@ if (true) {
     }
 
     function getHostParentFiber(fiber) {
-      var parent = fiber.return;
+      var parent = fiber["return"];
 
       while (parent !== null) {
         if (isHostParent(parent)) {
           return parent;
         }
 
-        parent = parent.return;
+        parent = parent["return"];
       }
 
       {
@@ -25443,16 +26351,16 @@ if (true) {
       siblings: while (true) {
         // If we didn't find anything, let's try the next sibling.
         while (node.sibling === null) {
-          if (node.return === null || isHostParent(node.return)) {
+          if (node["return"] === null || isHostParent(node["return"])) {
             // If we pop out of the root or hit the parent the fiber we are the
             // last sibling.
             return null;
           }
 
-          node = node.return;
+          node = node["return"];
         }
 
-        node.sibling.return = node.return;
+        node.sibling["return"] = node["return"];
         node = node.sibling;
 
         while (node.tag !== HostComponent && node.tag !== HostText && node.tag !== DehydratedFragment) {
@@ -25468,7 +26376,7 @@ if (true) {
           if (node.child === null || node.tag === HostPortal) {
             continue siblings;
           } else {
-            node.child.return = node;
+            node.child["return"] = node;
             node = node.child;
           }
         } // Check if this host node is stable or about to be placed.
@@ -25598,7 +26506,7 @@ if (true) {
 
       while (true) {
         if (!currentParentIsValid) {
-          var parent = node.return;
+          var parent = node["return"];
 
           findParent: while (true) {
             if (!(parent !== null)) {
@@ -25626,7 +26534,7 @@ if (true) {
                 break findParent;
             }
 
-            parent = parent.return;
+            parent = parent["return"];
           }
 
           currentParentIsValid = true;
@@ -25649,7 +26557,7 @@ if (true) {
             currentParent = node.stateNode.containerInfo;
             currentParentIsContainer = true; // Visit children because portals might contain host components.
 
-            node.child.return = node;
+            node.child["return"] = node;
             node = node.child;
             continue;
           }
@@ -25657,7 +26565,7 @@ if (true) {
           commitUnmount(finishedRoot, node); // Visit children because we may find more host components below.
 
           if (node.child !== null) {
-            node.child.return = node;
+            node.child["return"] = node;
             node = node.child;
             continue;
           }
@@ -25668,11 +26576,11 @@ if (true) {
         }
 
         while (node.sibling === null) {
-          if (node.return === null || node.return === current) {
+          if (node["return"] === null || node["return"] === current) {
             return;
           }
 
-          node = node.return;
+          node = node["return"];
 
           if (node.tag === HostPortal) {
             // When we go out of the portal, we need to restore the parent.
@@ -25681,7 +26589,7 @@ if (true) {
           }
         }
 
-        node.sibling.return = node.return;
+        node.sibling["return"] = node["return"];
         node = node.sibling;
       }
     }
@@ -25928,8 +26836,8 @@ if (true) {
     var TEST_NAME_TYPE = 3;
     var TEXT_TYPE = 4;
 
-    if (typeof Symbol === 'function' && Symbol.for) {
-      var symbolFor$1 = Symbol.for;
+    if (typeof Symbol === 'function' && Symbol["for"]) {
+      var symbolFor$1 = Symbol["for"];
       COMPONENT_TYPE = symbolFor$1('selector.component');
       HAS_PSEUDO_CLASS_TYPE = symbolFor$1('selector.has_pseudo_class');
       ROLE_TYPE = symbolFor$1('selector.role');
@@ -26281,7 +27189,7 @@ if (true) {
       } // Walk the parent path to the root and update the child expiration time.
 
       var node = sourceFiber;
-      var parent = sourceFiber.return;
+      var parent = sourceFiber["return"];
 
       while (parent !== null) {
         parent.childLanes = mergeLanes(parent.childLanes, lane);
@@ -26298,7 +27206,7 @@ if (true) {
         }
 
         node = parent;
-        parent = parent.return;
+        parent = parent["return"];
       }
 
       if (node.tag === HostRoot) {
@@ -26836,11 +27744,11 @@ if (true) {
       }
 
       if (workInProgress !== null) {
-        var interruptedWork = workInProgress.return;
+        var interruptedWork = workInProgress["return"];
 
         while (interruptedWork !== null) {
           unwindInterruptedWork(interruptedWork);
-          interruptedWork = interruptedWork.return;
+          interruptedWork = interruptedWork["return"];
         }
       }
 
@@ -26873,7 +27781,7 @@ if (true) {
 
           ReactCurrentOwner$2.current = null;
 
-          if (erroredWork === null || erroredWork.return === null) {
+          if (erroredWork === null || erroredWork["return"] === null) {
             // Expected to be working on a non-root fiber. This is a fatal error
             // because there's no ancestor that can handle it; the root is
             // supposed to capture all errors that weren't caught by an error
@@ -26897,7 +27805,7 @@ if (true) {
             stopProfilerTimerIfRunningAndRecordDelta(erroredWork, true);
           }
 
-          throwException(root, erroredWork.return, erroredWork, thrownValue, workInProgressRootRenderLanes);
+          throwException(root, erroredWork["return"], erroredWork, thrownValue, workInProgressRootRenderLanes);
           completeUnitOfWork(erroredWork);
         } catch (yetAnotherThrownValue) {
           // Something in the return path also threw.
@@ -26906,7 +27814,7 @@ if (true) {
           if (workInProgress === erroredWork && erroredWork !== null) {
             // If this boundary has already errored, then we had trouble processing
             // the error. Bubble it to the next boundary.
-            erroredWork = erroredWork.return;
+            erroredWork = erroredWork["return"];
             workInProgress = erroredWork;
           } else {
             erroredWork = workInProgress;
@@ -27140,7 +28048,7 @@ if (true) {
         // nothing should rely on this, but relying on it here means that we don't
         // need an additional field on the work in progress.
         var current = completedWork.alternate;
-        var returnFiber = completedWork.return; // Check if the work completed or if something threw.
+        var returnFiber = completedWork["return"]; // Check if the work completed or if something threw.
 
         if ((completedWork.flags & Incomplete) === NoFlags) {
           setCurrentFiber(completedWork);
@@ -27376,7 +28284,7 @@ if (true) {
 
       if (rootsWithPendingDiscreteUpdates !== null) {
         if (!hasDiscreteLanes(remainingLanes) && rootsWithPendingDiscreteUpdates.has(root)) {
-          rootsWithPendingDiscreteUpdates.delete(root);
+          rootsWithPendingDiscreteUpdates["delete"](root);
         }
       }
 
@@ -27984,7 +28892,7 @@ if (true) {
         return;
       }
 
-      var fiber = sourceFiber.return;
+      var fiber = sourceFiber["return"];
 
       while (fiber !== null) {
         if (fiber.tag === HostRoot) {
@@ -28025,7 +28933,7 @@ if (true) {
           }
         }
 
-        fiber = fiber.return;
+        fiber = fiber["return"];
       }
     }
 
@@ -28035,7 +28943,7 @@ if (true) {
       if (pingCache !== null) {
         // The wakeable resolved, so we no longer need to memoize, because it will
         // never be thrown again.
-        pingCache.delete(wakeable);
+        pingCache["delete"](wakeable);
       }
 
       var eventTime = requestEventTime();
@@ -28094,7 +29002,7 @@ if (true) {
       if (retryCache !== null) {
         // The wakeable resolved, so we no longer need to memoize, because it will
         // never be thrown again.
-        retryCache.delete(wakeable);
+        retryCache["delete"](wakeable);
       }
 
       retryTimedOutBoundary(boundaryFiber, retryLane);
@@ -28516,7 +29424,7 @@ if (true) {
           // If there's still work at the current priority,
           // That indicates that we are waiting for suspense data.
           if (!includesSomeLane(remainingLanesAfterCommit, lane)) {
-            pendingInteractionMap.delete(lane);
+            pendingInteractionMap["delete"](lane);
             scheduledInteractions.forEach(function (interaction) {
               interaction.__count--;
 
@@ -28909,11 +29817,11 @@ if (true) {
               return;
           }
 
-          if (node.return === null) {
+          if (node["return"] === null) {
             throw new Error('Expected to reach root first.');
           }
 
-          node = node.return;
+          node = node["return"];
         }
       }
     }
@@ -28929,7 +29837,7 @@ if (true) {
             foundHostInstances = true;
             hostInstances.add(node.stateNode); // There may still be more, so keep searching.
           } else if (node.child !== null) {
-            node.child.return = node;
+            node.child["return"] = node;
             node = node.child;
             continue;
           }
@@ -28939,14 +29847,14 @@ if (true) {
           }
 
           while (node.sibling === null) {
-            if (node.return === null || node.return === fiber) {
+            if (node["return"] === null || node["return"] === fiber) {
               return foundHostInstances;
             }
 
-            node = node.return;
+            node = node["return"];
           }
 
-          node.sibling.return = node.return;
+          node.sibling["return"] = node["return"];
           node = node.sibling;
         }
       }
@@ -28979,7 +29887,7 @@ if (true) {
       this.type = null;
       this.stateNode = null; // Fiber
 
-      this.return = null;
+      this["return"] = null;
       this.child = null;
       this.sibling = null;
       this.index = 0;
@@ -29505,7 +30413,7 @@ if (true) {
       target.elementType = source.elementType;
       target.type = source.type;
       target.stateNode = source.stateNode;
-      target.return = source.return;
+      target["return"] = source["return"];
       target.child = source.child;
       target.sibling = source.sibling;
       target.index = source.index;
@@ -30584,6 +31492,224 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-is/cjs/react-is.development.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-is/cjs/react-is.development.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+if (true) {
+  (function () {
+    'use strict'; // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+    // nor polyfill, then a plain number is used for performance.
+
+    var hasSymbol = typeof Symbol === 'function' && Symbol["for"];
+    var REACT_ELEMENT_TYPE = hasSymbol ? Symbol["for"]('react.element') : 0xeac7;
+    var REACT_PORTAL_TYPE = hasSymbol ? Symbol["for"]('react.portal') : 0xeaca;
+    var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol["for"]('react.fragment') : 0xeacb;
+    var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol["for"]('react.strict_mode') : 0xeacc;
+    var REACT_PROFILER_TYPE = hasSymbol ? Symbol["for"]('react.profiler') : 0xead2;
+    var REACT_PROVIDER_TYPE = hasSymbol ? Symbol["for"]('react.provider') : 0xeacd;
+    var REACT_CONTEXT_TYPE = hasSymbol ? Symbol["for"]('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+    // (unstable) APIs that have been removed. Can we remove the symbols?
+
+    var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol["for"]('react.async_mode') : 0xeacf;
+    var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol["for"]('react.concurrent_mode') : 0xeacf;
+    var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol["for"]('react.forward_ref') : 0xead0;
+    var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol["for"]('react.suspense') : 0xead1;
+    var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol["for"]('react.suspense_list') : 0xead8;
+    var REACT_MEMO_TYPE = hasSymbol ? Symbol["for"]('react.memo') : 0xead3;
+    var REACT_LAZY_TYPE = hasSymbol ? Symbol["for"]('react.lazy') : 0xead4;
+    var REACT_BLOCK_TYPE = hasSymbol ? Symbol["for"]('react.block') : 0xead9;
+    var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol["for"]('react.fundamental') : 0xead5;
+    var REACT_RESPONDER_TYPE = hasSymbol ? Symbol["for"]('react.responder') : 0xead6;
+    var REACT_SCOPE_TYPE = hasSymbol ? Symbol["for"]('react.scope') : 0xead7;
+
+    function isValidElementType(type) {
+      return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+      type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || _typeof(type) === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+    }
+
+    function typeOf(object) {
+      if (_typeof(object) === 'object' && object !== null) {
+        var $$typeof = object.$$typeof;
+
+        switch ($$typeof) {
+          case REACT_ELEMENT_TYPE:
+            var type = object.type;
+
+            switch (type) {
+              case REACT_ASYNC_MODE_TYPE:
+              case REACT_CONCURRENT_MODE_TYPE:
+              case REACT_FRAGMENT_TYPE:
+              case REACT_PROFILER_TYPE:
+              case REACT_STRICT_MODE_TYPE:
+              case REACT_SUSPENSE_TYPE:
+                return type;
+
+              default:
+                var $$typeofType = type && type.$$typeof;
+
+                switch ($$typeofType) {
+                  case REACT_CONTEXT_TYPE:
+                  case REACT_FORWARD_REF_TYPE:
+                  case REACT_LAZY_TYPE:
+                  case REACT_MEMO_TYPE:
+                  case REACT_PROVIDER_TYPE:
+                    return $$typeofType;
+
+                  default:
+                    return $$typeof;
+                }
+
+            }
+
+          case REACT_PORTAL_TYPE:
+            return $$typeof;
+        }
+      }
+
+      return undefined;
+    } // AsyncMode is deprecated along with isAsyncMode
+
+
+    var AsyncMode = REACT_ASYNC_MODE_TYPE;
+    var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+    var ContextConsumer = REACT_CONTEXT_TYPE;
+    var ContextProvider = REACT_PROVIDER_TYPE;
+    var Element = REACT_ELEMENT_TYPE;
+    var ForwardRef = REACT_FORWARD_REF_TYPE;
+    var Fragment = REACT_FRAGMENT_TYPE;
+    var Lazy = REACT_LAZY_TYPE;
+    var Memo = REACT_MEMO_TYPE;
+    var Portal = REACT_PORTAL_TYPE;
+    var Profiler = REACT_PROFILER_TYPE;
+    var StrictMode = REACT_STRICT_MODE_TYPE;
+    var Suspense = REACT_SUSPENSE_TYPE;
+    var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+
+    function isAsyncMode(object) {
+      {
+        if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+          hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+          console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+        }
+      }
+      return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+    }
+
+    function isConcurrentMode(object) {
+      return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+    }
+
+    function isContextConsumer(object) {
+      return typeOf(object) === REACT_CONTEXT_TYPE;
+    }
+
+    function isContextProvider(object) {
+      return typeOf(object) === REACT_PROVIDER_TYPE;
+    }
+
+    function isElement(object) {
+      return _typeof(object) === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+
+    function isForwardRef(object) {
+      return typeOf(object) === REACT_FORWARD_REF_TYPE;
+    }
+
+    function isFragment(object) {
+      return typeOf(object) === REACT_FRAGMENT_TYPE;
+    }
+
+    function isLazy(object) {
+      return typeOf(object) === REACT_LAZY_TYPE;
+    }
+
+    function isMemo(object) {
+      return typeOf(object) === REACT_MEMO_TYPE;
+    }
+
+    function isPortal(object) {
+      return typeOf(object) === REACT_PORTAL_TYPE;
+    }
+
+    function isProfiler(object) {
+      return typeOf(object) === REACT_PROFILER_TYPE;
+    }
+
+    function isStrictMode(object) {
+      return typeOf(object) === REACT_STRICT_MODE_TYPE;
+    }
+
+    function isSuspense(object) {
+      return typeOf(object) === REACT_SUSPENSE_TYPE;
+    }
+
+    exports.AsyncMode = AsyncMode;
+    exports.ConcurrentMode = ConcurrentMode;
+    exports.ContextConsumer = ContextConsumer;
+    exports.ContextProvider = ContextProvider;
+    exports.Element = Element;
+    exports.ForwardRef = ForwardRef;
+    exports.Fragment = Fragment;
+    exports.Lazy = Lazy;
+    exports.Memo = Memo;
+    exports.Portal = Portal;
+    exports.Profiler = Profiler;
+    exports.StrictMode = StrictMode;
+    exports.Suspense = Suspense;
+    exports.isAsyncMode = isAsyncMode;
+    exports.isConcurrentMode = isConcurrentMode;
+    exports.isContextConsumer = isContextConsumer;
+    exports.isContextProvider = isContextProvider;
+    exports.isElement = isElement;
+    exports.isForwardRef = isForwardRef;
+    exports.isFragment = isFragment;
+    exports.isLazy = isLazy;
+    exports.isMemo = isMemo;
+    exports.isPortal = isPortal;
+    exports.isProfiler = isProfiler;
+    exports.isStrictMode = isStrictMode;
+    exports.isSuspense = isSuspense;
+    exports.isValidElementType = isValidElementType;
+    exports.typeOf = typeOf;
+  })();
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-is/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/react-is/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
+}
+
+/***/ }),
+
 /***/ "./node_modules/react-on-rails/node_package/lib/Authenticity.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/react-on-rails/node_package/lib/Authenticity.js ***!
@@ -30597,7 +31723,7 @@ if (false) {} else {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = {
+exports["default"] = {
   authenticityToken: function authenticityToken() {
     var token = document.querySelector('meta[name="csrf-token"]');
 
@@ -30644,7 +31770,7 @@ Object.defineProperty(exports, "__esModule", {
 var isRenderFunction_1 = __importDefault(__webpack_require__(/*! ./isRenderFunction */ "./node_modules/react-on-rails/node_package/lib/isRenderFunction.js"));
 
 var registeredComponents = new Map();
-exports.default = {
+exports["default"] = {
   /**
    * @param components { component1: component1, component2: component2, etc. }
    */
@@ -30660,7 +31786,7 @@ exports.default = {
         throw new Error("Called register with null component named " + name);
       }
 
-      var renderFunction = isRenderFunction_1.default(component);
+      var renderFunction = isRenderFunction_1["default"](component);
       var isRenderer = renderFunction && component.length === 3;
       registeredComponents.set(name, {
         name: name,
@@ -30770,7 +31896,7 @@ var Authenticity_1 = __importDefault(__webpack_require__(/*! ./Authenticity */ "
 
 var context_1 = __importDefault(__webpack_require__(/*! ./context */ "./node_modules/react-on-rails/node_package/lib/context.js"));
 
-var ctx = context_1.default();
+var ctx = context_1["default"]();
 
 if (ctx === undefined) {
   throw new Error("The context (usually Window or NodeJS's Global) is undefined.");
@@ -30789,7 +31915,7 @@ ctx.ReactOnRails = {
    * @param components (key is component name, value is component)
    */
   register: function register(components) {
-    ComponentRegistry_1.default.register(components);
+    ComponentRegistry_1["default"].register(components);
   },
 
   /**
@@ -30803,7 +31929,7 @@ ctx.ReactOnRails = {
       throw new Error('Called ReactOnRails.registerStores with a null or undefined, rather than ' + 'an Object with keys being the store names and the values are the store generators.');
     }
 
-    StoreRegistry_1.default.register(stores);
+    StoreRegistry_1["default"].register(stores);
   },
 
   /**
@@ -30820,7 +31946,7 @@ ctx.ReactOnRails = {
       throwIfMissing = true;
     }
 
-    return StoreRegistry_1.default.getStore(name, throwIfMissing);
+    return StoreRegistry_1["default"].getStore(name, throwIfMissing);
   },
 
   /**
@@ -30862,7 +31988,7 @@ ctx.ReactOnRails = {
    * @returns String or null
    */
   authenticityToken: function authenticityToken() {
-    return Authenticity_1.default.authenticityToken();
+    return Authenticity_1["default"].authenticityToken();
   },
 
   /**
@@ -30875,7 +32001,7 @@ ctx.ReactOnRails = {
       otherHeaders = {};
     }
 
-    return Authenticity_1.default.authenticityHeaders(otherHeaders);
+    return Authenticity_1["default"].authenticityHeaders(otherHeaders);
   },
   // /////////////////////////////////////////////////////////////////////////////
   // INTERNALLY USED APIs
@@ -30897,7 +32023,7 @@ ctx.ReactOnRails = {
    * @returns Redux Store generator function
    */
   getStoreGenerator: function getStoreGenerator(name) {
-    return StoreRegistry_1.default.getStoreGenerator(name);
+    return StoreRegistry_1["default"].getStoreGenerator(name);
   },
 
   /**
@@ -30906,7 +32032,7 @@ ctx.ReactOnRails = {
    * @returns Redux Store, possibly hydrated
    */
   setStore: function setStore(name, store) {
-    return StoreRegistry_1.default.setStore(name, store);
+    return StoreRegistry_1["default"].setStore(name, store);
   },
 
   /**
@@ -30914,7 +32040,7 @@ ctx.ReactOnRails = {
    * request.
    */
   clearHydratedStores: function clearHydratedStores() {
-    StoreRegistry_1.default.clearHydratedStores();
+    StoreRegistry_1["default"].clearHydratedStores();
   },
 
   /**
@@ -30931,13 +32057,13 @@ ctx.ReactOnRails = {
    * @returns {virtualDomElement} Reference to your component's backing instance
    */
   render: function render(name, props, domNodeId, hydrate) {
-    var componentObj = ComponentRegistry_1.default.get(name);
-    var reactElement = createReactOutput_1.default({
+    var componentObj = ComponentRegistry_1["default"].get(name);
+    var reactElement = createReactOutput_1["default"]({
       componentObj: componentObj,
       props: props,
       domNodeId: domNodeId
     });
-    var render = hydrate ? react_dom_1.default.hydrate : react_dom_1.default.render; // eslint-disable-next-line react/no-render-return-value
+    var render = hydrate ? react_dom_1["default"].hydrate : react_dom_1["default"].render; // eslint-disable-next-line react/no-render-return-value
 
     return render(reactElement, document.getElementById(domNodeId));
   },
@@ -30948,7 +32074,7 @@ ctx.ReactOnRails = {
    * @returns {name, component, renderFunction, isRenderer}
    */
   getComponent: function getComponent(name) {
-    return ComponentRegistry_1.default.get(name);
+    return ComponentRegistry_1["default"].get(name);
   },
 
   /**
@@ -30956,7 +32082,7 @@ ctx.ReactOnRails = {
    * @param options
    */
   serverRenderReactComponent: function serverRenderReactComponent(options) {
-    return serverRenderReactComponent_1.default(options);
+    return serverRenderReactComponent_1["default"](options);
   },
 
   /**
@@ -30964,14 +32090,14 @@ ctx.ReactOnRails = {
    * @param options
    */
   handleError: function handleError(options) {
-    return handleError_1.default(options);
+    return handleError_1["default"](options);
   },
 
   /**
    * Used by Rails server rendering to replay console messages.
    */
   buildConsoleReplay: function buildConsoleReplay() {
-    return buildConsoleReplay_1.default();
+    return buildConsoleReplay_1["default"]();
   },
 
   /**
@@ -30979,7 +32105,7 @@ ctx.ReactOnRails = {
    * @returns {*}
    */
   registeredComponents: function registeredComponents() {
-    return ComponentRegistry_1.default.components();
+    return ComponentRegistry_1["default"].components();
   },
 
   /**
@@ -30987,7 +32113,7 @@ ctx.ReactOnRails = {
    * @returns {*}
    */
   storeGenerators: function storeGenerators() {
-    return StoreRegistry_1.default.storeGenerators();
+    return StoreRegistry_1["default"].storeGenerators();
   },
 
   /**
@@ -30995,7 +32121,7 @@ ctx.ReactOnRails = {
    * @returns {*}
    */
   stores: function stores() {
-    return StoreRegistry_1.default.stores();
+    return StoreRegistry_1["default"].stores();
   },
   resetOptions: function resetOptions() {
     this.options = Object.assign({}, DEFAULT_OPTIONS);
@@ -31003,7 +32129,7 @@ ctx.ReactOnRails = {
 };
 ctx.ReactOnRails.resetOptions();
 ClientStartup.clientStartup(ctx);
-exports.default = ctx.ReactOnRails;
+exports["default"] = ctx.ReactOnRails;
 
 /***/ }),
 
@@ -31020,7 +32146,7 @@ exports.default = ctx.ReactOnRails;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = {
+exports["default"] = {
   wrapInScriptTags: function wrapInScriptTags(scriptId, scriptBody) {
     if (!scriptBody) {
       return '';
@@ -31047,7 +32173,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 var registeredStoreGenerators = new Map();
 var hydratedStores = new Map();
-exports.default = {
+exports["default"] = {
   /**
    * Register a store generator, a function that takes props and returns a store.
    * @param storeGenerators { name1: storeGenerator1, name2: storeGenerator2 }
@@ -31194,7 +32320,7 @@ function consoleReplay() {
         val = e.message + ": " + arg;
       }
 
-      return scriptSanitizedVal_1.default(val);
+      return scriptSanitizedVal_1["default"](val);
     });
     return "console." + msg.level + ".apply(console, " + JSON.stringify(stringifiedList) + ");";
   });
@@ -31204,10 +32330,10 @@ function consoleReplay() {
 exports.consoleReplay = consoleReplay;
 
 function buildConsoleReplay() {
-  return RenderUtils_1.default.wrapInScriptTags('consoleReplayLog', consoleReplay());
+  return RenderUtils_1["default"].wrapInScriptTags('consoleReplayLog', consoleReplay());
 }
 
-exports.default = buildConsoleReplay;
+exports["default"] = buildConsoleReplay;
 
 /***/ }),
 
@@ -31373,8 +32499,8 @@ function render(el, railsContext) {
       } // Hydrate if available and was server rendered
 
 
-      var shouldHydrate = !!react_dom_1.default.hydrate && !!domNode.innerHTML;
-      var reactElementOrRouterResult = createReactOutput_1.default({
+      var shouldHydrate = !!react_dom_1["default"].hydrate && !!domNode.innerHTML;
+      var reactElementOrRouterResult = createReactOutput_1["default"]({
         componentObj: componentObj,
         props: props,
         domNodeId: domNodeId,
@@ -31383,12 +32509,12 @@ function render(el, railsContext) {
         shouldHydrate: shouldHydrate
       });
 
-      if (isServerRenderResult_1.default(reactElementOrRouterResult)) {
+      if (isServerRenderResult_1["default"](reactElementOrRouterResult)) {
         throw new Error("You returned a server side type of react-router error: " + JSON.stringify(reactElementOrRouterResult) + "\nYou should return a React.Component always for the client side entry point.");
       } else if (shouldHydrate) {
-        react_dom_1.default.hydrate(reactElementOrRouterResult, domNode);
+        react_dom_1["default"].hydrate(reactElementOrRouterResult, domNode);
       } else {
-        react_dom_1.default.render(reactElementOrRouterResult, domNode);
+        react_dom_1["default"].render(reactElementOrRouterResult, domNode);
       }
     }
   } catch (e) {
@@ -31433,7 +32559,7 @@ function unmount(el) {
   }
 
   try {
-    react_dom_1.default.unmountComponentAtNode(domNode);
+    react_dom_1["default"].unmountComponentAtNode(domNode);
   } catch (e) {
     console.info("Caught error calling unmountComponentAtNode: " + e.message + " for domNode", domNode, e);
   }
@@ -31534,7 +32660,7 @@ function context() {
   return typeof window !== 'undefined' && window || typeof global !== 'undefined' && global || this;
 }
 
-exports.default = context;
+exports["default"] = context;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
@@ -31605,13 +32731,13 @@ function createReactOutput(_a) {
 
     var renderFunctionResult = component(props, railsContext);
 
-    if (isServerRenderResult_1.default(renderFunctionResult)) {
+    if (isServerRenderResult_1["default"](renderFunctionResult)) {
       // We just return at this point, because calling function knows how to handle this case and
       // we can't call React.createElement with this type of Object.
       return renderFunctionResult;
     }
 
-    if (react_1.default.isValidElement(renderFunctionResult)) {
+    if (react_1["default"].isValidElement(renderFunctionResult)) {
       // If already a ReactElement, then just return it.
       console.error("Warning: ReactOnRails: Your registered render-function (ReactOnRails.register) for " + name + "\nincorrectly returned a React Element (JSX). Instead, return a React Function Component by\nwrapping your JSX in a function. ReactOnRails v13 will throw error on this, as React Hooks do not\nwork if you return JSX. Update by wrapping the result JSX of " + name + " in a fat arrow function.");
       return renderFunctionResult;
@@ -31619,14 +32745,14 @@ function createReactOutput(_a) {
 
 
     var reactComponent = renderFunctionResult;
-    return react_1.default.createElement(reactComponent, props);
+    return react_1["default"].createElement(reactComponent, props);
   } // else
 
 
-  return react_1.default.createElement(component, props);
+  return react_1["default"].createElement(component, props);
 }
 
-exports.default = createReactOutput;
+exports["default"] = createReactOutput;
 
 /***/ }),
 
@@ -31701,14 +32827,14 @@ var handleError = function handleError(options) {
 
   if (serverSide) {
     msg += "Exception in rendering!\n" + (e.fileName ? "\nlocation: " + e.fileName + ":" + e.lineNumber : '') + "\nMessage: " + e.message + "\n\n" + e.stack;
-    var reactElement = react_1.default.createElement('pre', null, msg);
-    return server_1.default.renderToString(reactElement);
+    var reactElement = react_1["default"].createElement('pre', null, msg);
+    return server_1["default"].renderToString(reactElement);
   }
 
   return "undefined";
 };
 
-exports.default = handleError;
+exports["default"] = handleError;
 
 /***/ }),
 
@@ -31751,7 +32877,7 @@ function isRenderFunction(component) {
   return false;
 }
 
-exports.default = isRenderFunction;
+exports["default"] = isRenderFunction;
 
 /***/ }),
 
@@ -31773,7 +32899,7 @@ function isServerRenderResult(testValue) {
   return !!(testValue.renderedHtml || testValue.redirectLocation || testValue.routeError || testValue.error);
 }
 
-exports.default = isServerRenderResult;
+exports["default"] = isServerRenderResult;
 
 /***/ }),
 
@@ -31791,7 +32917,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-exports.default = function (val) {
+exports["default"] = function (val) {
   // Replace closing
   var re = /<\/\W*script/gi;
   return val.replace(re, '(/script');
@@ -31843,13 +32969,13 @@ function serverRenderReactComponent(options) {
   var renderingError = null;
 
   try {
-    var componentObj = ComponentRegistry_1.default.get(name);
+    var componentObj = ComponentRegistry_1["default"].get(name);
 
     if (componentObj.isRenderer) {
       throw new Error("Detected a renderer while server rendering component '" + name + "'. See https://github.com/shakacode/react_on_rails#renderer-functions");
     }
 
-    var reactElementOrRouterResult = createReactOutput_1.default({
+    var reactElementOrRouterResult = createReactOutput_1["default"]({
       componentObj: componentObj,
       domNodeId: domNodeId,
       trace: trace,
@@ -31857,7 +32983,7 @@ function serverRenderReactComponent(options) {
       railsContext: railsContext
     });
 
-    if (isServerRenderResult_1.default(reactElementOrRouterResult)) {
+    if (isServerRenderResult_1["default"](reactElementOrRouterResult)) {
       // We let the client side handle any redirect
       // Set hasErrors in case we want to throw a Rails exception
       hasErrors = !!reactElementOrRouterResult.routeError;
@@ -31879,7 +33005,7 @@ function serverRenderReactComponent(options) {
       }
     } else {
       try {
-        htmlResult = server_1.default.renderToString(reactElementOrRouterResult);
+        htmlResult = server_1["default"].renderToString(reactElementOrRouterResult);
       } catch (error) {
         console.error("Invalid call to renderToString. Possibly you have a renderFunction, a function that already\ncalls renderToString, that takes one parameter. You need to add an extra unused\nparameter to identify this function as a renderFunction and not a simple React \nFunction Component.");
         throw error;
@@ -31891,7 +33017,7 @@ function serverRenderReactComponent(options) {
     }
 
     hasErrors = true;
-    htmlResult = handleError_1.default({
+    htmlResult = handleError_1["default"]({
       e: e,
       name: name,
       serverSide: true
@@ -31899,7 +33025,7 @@ function serverRenderReactComponent(options) {
     renderingError = e;
   }
 
-  var consoleReplayScript = buildConsoleReplay_1.default();
+  var consoleReplayScript = buildConsoleReplay_1["default"]();
   var result = {
     html: htmlResult,
     consoleReplayScript: consoleReplayScript,
@@ -31916,7 +33042,7 @@ function serverRenderReactComponent(options) {
   return JSON.stringify(result);
 }
 
-exports.default = serverRenderReactComponent;
+exports["default"] = serverRenderReactComponent;
 
 /***/ }),
 
@@ -31974,8 +33100,8 @@ if (true) {
     var REACT_OFFSCREEN_TYPE = 0xeae2;
     var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
 
-    if (typeof Symbol === 'function' && Symbol.for) {
-      var symbolFor = Symbol.for;
+    if (typeof Symbol === 'function' && Symbol["for"]) {
+      var symbolFor = Symbol["for"];
       REACT_ELEMENT_TYPE = symbolFor('react.element');
       REACT_PORTAL_TYPE = symbolFor('react.portal');
       exports.Fragment = symbolFor('react.fragment');
@@ -33186,7 +34312,7 @@ if (true) {
         pending._result = thenable;
         thenable.then(function (moduleObject) {
           if (payload._status === Pending) {
-            var defaultExport = moduleObject.default;
+            var defaultExport = moduleObject["default"];
             {
               if (defaultExport === undefined) {
                 error('lazy: Expected the result of a dynamic import() call. ' + 'Instead received: %s\n\nYour code should look like: \n  ' + // Break up imports to avoid accidentally parsing them as dependencies.
@@ -34456,7 +35582,7 @@ if (true) {
 
     function unstable_unsubscribe(subscriber) {
       {
-        subscribers.delete(subscriber);
+        subscribers["delete"](subscriber);
 
         if (subscribers.size === 0) {
           exports.__subscriberRef.current = null;
@@ -35307,4 +36433,4 @@ module.exports = g;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=hello-world-bundle-d29f84c15ab0cb36d901.js.map;
+//# sourceMappingURL=hello-world-bundle-13947f98c5091286c9e4.js.map;

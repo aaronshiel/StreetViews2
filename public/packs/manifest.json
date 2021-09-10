@@ -1,34 +1,44 @@
 {
-  "application.js": "/packs/js/application-e421b4aa3f716bebdab1.js",
-  "application.js.map": "/packs/js/application-e421b4aa3f716bebdab1.js.map",
+  "application.js": "/packs/js/application-be412d64645010827f4e.js",
+  "application.js.map": "/packs/js/application-be412d64645010827f4e.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-e421b4aa3f716bebdab1.js"
+        "/packs/js/application-be412d64645010827f4e.js"
       ],
       "js.map": [
-        "/packs/js/application-e421b4aa3f716bebdab1.js.map"
+        "/packs/js/application-be412d64645010827f4e.js.map"
       ]
     },
     "hello_react": {
       "js": [
-        "/packs/js/hello_react-2b449d4a81de62ff202d.js"
+        "/packs/js/hello_react-6a93156487ecb4fd6346.js"
       ],
       "js.map": [
-        "/packs/js/hello_react-2b449d4a81de62ff202d.js.map"
+        "/packs/js/hello_react-6a93156487ecb4fd6346.js.map"
+      ]
+    },
+    "hello_typescript": {
+      "js": [
+        "/packs/js/hello_typescript-62a7ba3025e0004166d6.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_typescript-62a7ba3025e0004166d6.js.map"
       ]
     },
     "hello-world-bundle": {
       "js": [
-        "/packs/js/hello-world-bundle-58a075a0d700d79742a8.js"
+        "/packs/js/hello-world-bundle-f8737ecb5f34851d7260.js"
       ],
       "js.map": [
-        "/packs/js/hello-world-bundle-58a075a0d700d79742a8.js.map"
+        "/packs/js/hello-world-bundle-f8737ecb5f34851d7260.js.map"
       ]
     }
   },
-  "hello-world-bundle.js": "/packs/js/hello-world-bundle-58a075a0d700d79742a8.js",
-  "hello-world-bundle.js.map": "/packs/js/hello-world-bundle-58a075a0d700d79742a8.js.map",
-  "hello_react.js": "/packs/js/hello_react-2b449d4a81de62ff202d.js",
-  "hello_react.js.map": "/packs/js/hello_react-2b449d4a81de62ff202d.js.map"
+  "hello-world-bundle.js": "/packs/js/hello-world-bundle-f8737ecb5f34851d7260.js",
+  "hello-world-bundle.js.map": "/packs/js/hello-world-bundle-f8737ecb5f34851d7260.js.map",
+  "hello_react.js": "/packs/js/hello_react-6a93156487ecb4fd6346.js",
+  "hello_react.js.map": "/packs/js/hello_react-6a93156487ecb4fd6346.js.map",
+  "hello_typescript.js": "/packs/js/hello_typescript-62a7ba3025e0004166d6.js",
+  "hello_typescript.js.map": "/packs/js/hello_typescript-62a7ba3025e0004166d6.js.map"
 }

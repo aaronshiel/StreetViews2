@@ -5,7 +5,7 @@
           var props = {"name":"Stranger"};
           return ReactOnRails.serverRenderReactComponent({
             name: 'HelloWorld',
-            domNodeId: 'HelloWorld-react-component-0a9f2be1-7e25-420d-964f-004b336b8dd2',
+            domNodeId: 'HelloWorld-react-component-45c5dcc9-5499-4249-8935-66e5d68b5a48',
             props: props,
             trace: true,
             railsContext: railsContext
