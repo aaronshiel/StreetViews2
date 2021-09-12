@@ -1,14 +1,16 @@
 import React from 'react';
+import { Person } from '../../../types';
 
 function DisplayListOfNames(props:{
-  names: string[]
+  people: Person[]
 }): JSX.Element {
+  console.log(props.people)
   return(
     <div>
       <br/>
       Hello from TypeScript!
-      {props.names.map(function(d, idx){
-         return (<li key={idx}>{d}</li>)
+      {props.people.map(function(d, idx){
+         return (<li key={idx}>{d.name}</li>)
        })}
     </div>
   )

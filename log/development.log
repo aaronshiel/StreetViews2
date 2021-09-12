@@ -8118,3 +8118,508 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
 Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 9309)
 
 
+Started GET "/hello_world" for ::1 at 2021-09-11 16:31:45 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+[react_on_rails] Evaluating code to server render.
+JavaScript code used: tmp/server-generated-1.js
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[react_on_rails] Created JavaScript context with file /root/StreetViews2/public/packs/js/hello-world-bundle-f8737ecb5f34851d7260.js
+[react_on_rails] RENDERED HelloWorld to dom node with id: HelloWorld-react-component-b76b05ed-46a0-4db2-bac0-73862e408ed1
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 160.1ms | Allocations: 21006)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/hello_world.html.erb (Duration: 162.3ms | Allocations: 22866)
+Completed 200 OK in 170ms (Views: 164.2ms | ActiveRecord: 0.0ms | Allocations: 25138)
+
+
+Started GET "/hello_world" for ::1 at 2021-09-11 16:31:45 -0700
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+[react_on_rails] Evaluating code to server render.
+JavaScript code used: tmp/server-generated-2.js
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[react_on_rails] RENDERED HelloWorld to dom node with id: HelloWorld-react-component-0861ab56-06d8-4954-81e2-b2501a1ebf16
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 6.6ms | Allocations: 6558)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/hello_world.html.erb (Duration: 8.9ms | Allocations: 8252)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 8623)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePeople (20210911233520)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "people" ("id" bigserial primary key, "name" character varying, "age" decimal, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPerson Create (1.7ms)[0m  [1m[32mINSERT INTO "people" ("age", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["age", "24.0"], ["name", "aaron"], ["created_at", "2021-09-11 23:41:25.317009"], ["updated_at", "2021-09-11 23:41:25.317009"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT "people".* FROM "people" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPerson Create (0.4ms)[0m  [1m[32mINSERT INTO "people" ("age", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["age", "26.0"], ["name", "ryan"], ["created_at", "2021-09-11 23:42:14.484916"], ["updated_at", "2021-09-11 23:42:14.484916"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPerson Create (0.3ms)[0m  [1m[32mINSERT INTO "people" ("age", "name", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["age", "28.0"], ["name", "becky"], ["created_at", "2021-09-11 23:42:22.349299"], ["updated_at", "2021-09-11 23:42:22.349299"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/hello_world" for ::1 at 2021-09-11 16:43:47 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20210911233520_create_people.rb
+
+
+):
+  
+activerecord (6.1.4.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.4.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.4.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.4.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.2) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.4.0) lib/puma/configuration.rb:249:in `call'
+puma (5.4.0) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.4.0) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.4.0) lib/puma/request.rb:76:in `handle_request'
+puma (5.4.0) lib/puma/server.rb:440:in `process_client'
+puma (5.4.0) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePeople (20210911233520)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "people" ("id" bigserial primary key, "name" character varying, "age" decimal, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/hello_world" for ::1 at 2021-09-11 16:44:28 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HelloWorldController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1585)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/hello_world_controller.rb:8:in `index'
+Started GET "/hello_world" for ::1 at 2021-09-11 16:44:48 -0700
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+[react_on_rails] Evaluating code to server render.
+JavaScript code used: tmp/server-generated-1.js
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[react_on_rails] Created JavaScript context with file /root/StreetViews2/public/packs/js/hello-world-bundle-f8737ecb5f34851d7260.js
+[react_on_rails] RENDERED HelloWorld to dom node with id: HelloWorld-react-component-692b7ea3-f40f-467d-91bb-780b5f6156dc
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people"."name" FROM "people"[0m
+  ↳ app/views/hello_world/index.html.erb:4
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 53.5ms | Allocations: 25818)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/hello_world.html.erb (Duration: 55.3ms | Allocations: 27657)
+Completed 200 OK in 57ms (Views: 51.0ms | ActiveRecord: 5.0ms | Allocations: 28894)
+
+
+Started GET "/hello_world" for ::1 at 2021-09-11 16:46:31 -0700
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /root/StreetViews2/public/packs
+[Webpacker] Hash: 146fa9d7d3ea83da13ad
+Version: webpack 4.46.0
+Time: 1099ms
+Built at: 09/11/2021 4:46:33 PM
+                                            Asset      Size              Chunks                         Chunk Names
+           js/application-be412d64645010827f4e.js   125 KiB         application  [emitted] [immutable]  application
+       js/application-be412d64645010827f4e.js.map   139 KiB         application  [emitted] [dev]        application
+    js/hello-world-bundle-f2055c6da8ce64fe0f6b.js  1.25 MiB  hello-world-bundle  [emitted] [immutable]  hello-world-bundle
+js/hello-world-bundle-f2055c6da8ce64fe0f6b.js.map  1.44 MiB  hello-world-bundle  [emitted] [dev]        hello-world-bundle
+           js/hello_react-6a93156487ecb4fd6346.js  1.09 MiB         hello_react  [emitted] [immutable]  hello_react
+       js/hello_react-6a93156487ecb4fd6346.js.map  1.26 MiB         hello_react  [emitted] [dev]        hello_react
+      js/hello_typescript-62a7ba3025e0004166d6.js  4.12 KiB    hello_typescript  [emitted] [immutable]  hello_typescript
+  js/hello_typescript-62a7ba3025e0004166d6.js.map  3.81 KiB    hello_typescript  [emitted] [dev]        hello_typescript
+                                    manifest.json  1.43 KiB                      [emitted]              
+Entrypoint application = js/application-be412d64645010827f4e.js js/application-be412d64645010827f4e.js.map
+Entrypoint hello_react = js/hello_react-6a93156487ecb4fd6346.js js/hello_react-6a93156487ecb4fd6346.js.map
+Entrypoint hello_typescript = js/hello_typescript-62a7ba3025e0004166d6.js js/hello_typescript-62a7ba3025e0004166d6.js.map
+Entrypoint hello-world-bundle = js/hello-world-bundle-f2055c6da8ce64fe0f6b.js js/hello-world-bundle-f2055c6da8ce64fe0f6b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello-world-bundle.js] 363 bytes {hello-world-bundle} [built]
+[./app/javascript/packs/hello_react.jsx] 1.05 KiB {hello_react} [built]
+[./app/javascript/packs/hello_typescript.ts] 200 bytes {hello_typescript} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello-world-bundle} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 36 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+[react_on_rails] Evaluating code to server render.
+JavaScript code used: tmp/server-generated-2.js
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[react_on_rails] Created JavaScript context with file /root/StreetViews2/public/packs/js/hello-world-bundle-f2055c6da8ce64fe0f6b.js
+[react_on_rails] RENDERED HelloWorld to dom node with id: HelloWorld-react-component-ae008e63-fb54-43c5-bd81-5063d1fb230e
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people"."name" FROM "people"[0m
+  ↳ app/views/hello_world/index.html.erb:4
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 2288.0ms | Allocations: 17644)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/hello_world.html.erb (Duration: 2289.6ms | Allocations: 19338)
+Completed 200 OK in 2290ms (Views: 2289.3ms | ActiveRecord: 0.7ms | Allocations: 19729)
+
+
+Started GET "/hello_world" for ::1 at 2021-09-11 16:50:04 -0700
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /root/StreetViews2/public/packs
+[Webpacker] Hash: ad5e289b48bcf0696cdb
+Version: webpack 4.46.0
+Time: 879ms
+Built at: 09/11/2021 4:50:06 PM
+                                            Asset      Size              Chunks                         Chunk Names
+           js/application-be412d64645010827f4e.js   125 KiB         application  [emitted] [immutable]  application
+       js/application-be412d64645010827f4e.js.map   139 KiB         application  [emitted] [dev]        application
+    js/hello-world-bundle-0d1789d06dc0ebb9c8d7.js  1.25 MiB  hello-world-bundle  [emitted] [immutable]  hello-world-bundle
+js/hello-world-bundle-0d1789d06dc0ebb9c8d7.js.map  1.44 MiB  hello-world-bundle  [emitted] [dev]        hello-world-bundle
+           js/hello_react-6a93156487ecb4fd6346.js  1.09 MiB         hello_react  [emitted] [immutable]  hello_react
+       js/hello_react-6a93156487ecb4fd6346.js.map  1.26 MiB         hello_react  [emitted] [dev]        hello_react
+      js/hello_typescript-62a7ba3025e0004166d6.js  4.12 KiB    hello_typescript  [emitted] [immutable]  hello_typescript
+  js/hello_typescript-62a7ba3025e0004166d6.js.map  3.81 KiB    hello_typescript  [emitted] [dev]        hello_typescript
+                                    manifest.json  1.43 KiB                      [emitted]              
+Entrypoint application = js/application-be412d64645010827f4e.js js/application-be412d64645010827f4e.js.map
+Entrypoint hello_react = js/hello_react-6a93156487ecb4fd6346.js js/hello_react-6a93156487ecb4fd6346.js.map
+Entrypoint hello_typescript = js/hello_typescript-62a7ba3025e0004166d6.js js/hello_typescript-62a7ba3025e0004166d6.js.map
+Entrypoint hello-world-bundle = js/hello-world-bundle-0d1789d06dc0ebb9c8d7.js js/hello-world-bundle-0d1789d06dc0ebb9c8d7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello-world-bundle.js] 363 bytes {hello-world-bundle} [built]
+[./app/javascript/packs/hello_react.jsx] 1.05 KiB {hello_react} [built]
+[./app/javascript/packs/hello_typescript.ts] 200 bytes {hello_typescript} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello-world-bundle} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 36 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+[react_on_rails] Evaluating code to server render.
+JavaScript code used: tmp/server-generated-3.js
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[react_on_rails] Created JavaScript context with file /root/StreetViews2/public/packs/js/hello-world-bundle-0d1789d06dc0ebb9c8d7.js
+[react_on_rails] RENDERED HelloWorld to dom node with id: HelloWorld-react-component-75b8180c-093e-44db-b526-584130e19c9c
+  [1m[36mPerson Load (0.7ms)[0m  [1m[34mSELECT "people"."name" FROM "people"[0m
+  ↳ app/views/hello_world/index.html.erb:4
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 1623.1ms | Allocations: 17706)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/hello_world.html.erb (Duration: 1624.7ms | Allocations: 19413)
+Completed 200 OK in 1626ms (Views: 1624.5ms | ActiveRecord: 0.7ms | Allocations: 19792)
+
+
+Started GET "/hello_world" for ::1 at 2021-09-11 16:50:27 -0700
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /root/StreetViews2/public/packs
+[Webpacker] Hash: e6862a4156571815e683
+Version: webpack 4.46.0
+Time: 875ms
+Built at: 09/11/2021 4:50:29 PM
+                                            Asset      Size              Chunks                         Chunk Names
+           js/application-be412d64645010827f4e.js   125 KiB         application  [emitted] [immutable]  application
+       js/application-be412d64645010827f4e.js.map   139 KiB         application  [emitted] [dev]        application
+    js/hello-world-bundle-b11875d46ae5987cdd6b.js  1.25 MiB  hello-world-bundle  [emitted] [immutable]  hello-world-bundle
+js/hello-world-bundle-b11875d46ae5987cdd6b.js.map  1.44 MiB  hello-world-bundle  [emitted] [dev]        hello-world-bundle
+           js/hello_react-6a93156487ecb4fd6346.js  1.09 MiB         hello_react  [emitted] [immutable]  hello_react
+       js/hello_react-6a93156487ecb4fd6346.js.map  1.26 MiB         hello_react  [emitted] [dev]        hello_react
+      js/hello_typescript-62a7ba3025e0004166d6.js  4.12 KiB    hello_typescript  [emitted] [immutable]  hello_typescript
+  js/hello_typescript-62a7ba3025e0004166d6.js.map  3.81 KiB    hello_typescript  [emitted] [dev]        hello_typescript
+                                    manifest.json  1.43 KiB                      [emitted]              
+Entrypoint application = js/application-be412d64645010827f4e.js js/application-be412d64645010827f4e.js.map
+Entrypoint hello_react = js/hello_react-6a93156487ecb4fd6346.js js/hello_react-6a93156487ecb4fd6346.js.map
+Entrypoint hello_typescript = js/hello_typescript-62a7ba3025e0004166d6.js js/hello_typescript-62a7ba3025e0004166d6.js.map
+Entrypoint hello-world-bundle = js/hello-world-bundle-b11875d46ae5987cdd6b.js js/hello-world-bundle-b11875d46ae5987cdd6b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello-world-bundle.js] 363 bytes {hello-world-bundle} [built]
+[./app/javascript/packs/hello_react.jsx] 1.05 KiB {hello_react} [built]
+[./app/javascript/packs/hello_typescript.ts] 200 bytes {hello_typescript} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello-world-bundle} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 36 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+[react_on_rails] Evaluating code to server render.
+JavaScript code used: tmp/server-generated-4.js
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[react_on_rails] Created JavaScript context with file /root/StreetViews2/public/packs/js/hello-world-bundle-b11875d46ae5987cdd6b.js
+[react_on_rails] RENDERED HelloWorld to dom node with id: HelloWorld-react-component-cf3f1238-648b-41ee-8a14-875c6d45b1b8
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people"."name" FROM "people"[0m
+  ↳ app/views/hello_world/index.html.erb:4
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 1629.4ms | Allocations: 17714)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/hello_world.html.erb (Duration: 1631.3ms | Allocations: 19421)
+Completed 200 OK in 1632ms (Views: 1631.1ms | ActiveRecord: 0.6ms | Allocations: 19800)
+
+
+Started GET "/hello_world" for ::1 at 2021-09-11 16:57:49 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /root/StreetViews2/public/packs
+[Webpacker] Hash: ac7f17b3b12928e70a57
+Version: webpack 4.46.0
+Time: 949ms
+Built at: 09/11/2021 4:57:50 PM
+                                            Asset      Size              Chunks                         Chunk Names
+           js/application-be412d64645010827f4e.js   125 KiB         application  [emitted] [immutable]  application
+       js/application-be412d64645010827f4e.js.map   139 KiB         application  [emitted] [dev]        application
+    js/hello-world-bundle-2ac7c64234d7b389136c.js  1.25 MiB  hello-world-bundle  [emitted] [immutable]  hello-world-bundle
+js/hello-world-bundle-2ac7c64234d7b389136c.js.map  1.44 MiB  hello-world-bundle  [emitted] [dev]        hello-world-bundle
+           js/hello_react-6a93156487ecb4fd6346.js  1.09 MiB         hello_react  [emitted] [immutable]  hello_react
+       js/hello_react-6a93156487ecb4fd6346.js.map  1.26 MiB         hello_react  [emitted] [dev]        hello_react
+      js/hello_typescript-62a7ba3025e0004166d6.js  4.12 KiB    hello_typescript  [emitted] [immutable]  hello_typescript
+  js/hello_typescript-62a7ba3025e0004166d6.js.map  3.81 KiB    hello_typescript  [emitted] [dev]        hello_typescript
+                                    manifest.json  1.43 KiB                      [emitted]              
+Entrypoint application = js/application-be412d64645010827f4e.js js/application-be412d64645010827f4e.js.map
+Entrypoint hello_react = js/hello_react-6a93156487ecb4fd6346.js js/hello_react-6a93156487ecb4fd6346.js.map
+Entrypoint hello_typescript = js/hello_typescript-62a7ba3025e0004166d6.js js/hello_typescript-62a7ba3025e0004166d6.js.map
+Entrypoint hello-world-bundle = js/hello-world-bundle-2ac7c64234d7b389136c.js js/hello-world-bundle-2ac7c64234d7b389136c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello-world-bundle.js] 363 bytes {hello-world-bundle} [built]
+[./app/javascript/packs/hello_react.jsx] 1.05 KiB {hello_react} [built]
+[./app/javascript/packs/hello_typescript.ts] 200 bytes {hello_typescript} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello-world-bundle} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 36 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+[react_on_rails] Evaluating code to server render.
+JavaScript code used: tmp/server-generated-1.js
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[react_on_rails] Created JavaScript context with file /root/StreetViews2/public/packs/js/hello-world-bundle-2ac7c64234d7b389136c.js
+[react_on_rails] RENDERED HelloWorld to dom node with id: HelloWorld-react-component-9b5f37b8-342e-4dc3-84ab-753017000fe6
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people"."name" FROM "people"[0m
+  ↳ app/views/hello_world/index.html.erb:4
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 1728.8ms | Allocations: 26716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/hello_world.html.erb (Duration: 1737.6ms | Allocations: 28575)
+Completed 200 OK in 1743ms (Views: 1734.6ms | ActiveRecord: 4.0ms | Allocations: 31179)
+
+
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people".* FROM "people" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT "people"."name" FROM "people" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2021-09-11 16:59:15 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.7.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.7.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.7ms | Allocations: 332)
+Completed 200 OK in 11ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 2537)
+
+
+Started GET "/hello_world" for ::1 at 2021-09-11 16:59:17 -0700
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+[react_on_rails] Evaluating code to server render.
+JavaScript code used: tmp/server-generated-1.js
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[react_on_rails] Created JavaScript context with file /root/StreetViews2/public/packs/js/hello-world-bundle-2ac7c64234d7b389136c.js
+[react_on_rails] RENDERED HelloWorld to dom node with id: HelloWorld-react-component-e8c6d355-1fbc-45c6-bacd-05907986adca
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people"."name" FROM "people"[0m
+  ↳ app/views/hello_world/index.html.erb:4
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 60.5ms | Allocations: 25548)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/hello_world.html.erb (Duration: 62.6ms | Allocations: 27407)
+Completed 200 OK in 65ms (Views: 59.6ms | ActiveRecord: 3.8ms | Allocations: 28556)
+
+
+Started GET "/hello_world" for ::1 at 2021-09-11 16:59:18 -0700
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+[react_on_rails] Evaluating code to server render.
+JavaScript code used: tmp/server-generated-2.js
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[react_on_rails] RENDERED HelloWorld to dom node with id: HelloWorld-react-component-abd76b97-8da2-4309-b061-5a7b06302a6a
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people"."name" FROM "people"[0m
+  ↳ app/views/hello_world/index.html.erb:4
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 7.9ms | Allocations: 7611)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/hello_world.html.erb (Duration: 9.7ms | Allocations: 9319)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.6ms | Allocations: 9709)
+
+
+Started GET "/hello_world" for ::1 at 2021-09-11 16:59:58 -0700
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+[react_on_rails] Evaluating code to server render.
+JavaScript code used: tmp/server-generated-3.js
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[react_on_rails] Created JavaScript context with file /root/StreetViews2/public/packs/js/hello-world-bundle-2ac7c64234d7b389136c.js
+[react_on_rails] RENDERED HelloWorld to dom node with id: HelloWorld-react-component-99afd773-62e5-463a-a30a-4d0a02b6152f
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 38.9ms | Allocations: 16481)
+  Rendered layout layouts/hello_world.html.erb (Duration: 39.3ms | Allocations: 16545)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms | Allocations: 17263)
+
+
+  
+ActionView::Template::Error (json_safe_and_pretty only accepts String or Hash as argument (Person::ActiveRecord_Relation given).):
+    1: <h1>Hello World</h1>
+    2: <%= javascript_pack_tag 'application' %>
+    3: <%= react_component("HelloWorld", props: @hello_world_props, prerender: true) %>
+    4: <%= react_component("DisplayListOfNames", props: @list_of_names_props) %>
+  
+app/views/hello_world/index.html.erb:4
+Started GET "/hello_world" for ::1 at 2021-09-11 17:00:26 -0700
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+[react_on_rails] Evaluating code to server render.
+JavaScript code used: tmp/server-generated-4.js
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[react_on_rails] Created JavaScript context with file /root/StreetViews2/public/packs/js/hello-world-bundle-2ac7c64234d7b389136c.js
+[react_on_rails] RENDERED HelloWorld to dom node with id: HelloWorld-react-component-e9f54cda-0e8d-4844-8f7f-bfafbef959d0
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT "people"."name" FROM "people"[0m
+  ↳ app/views/hello_world/index.html.erb:4
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 46.5ms | Allocations: 19463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/hello_world.html.erb (Duration: 48.2ms | Allocations: 21184)
+Completed 200 OK in 50ms (Views: 44.8ms | ActiveRecord: 4.0ms | Allocations: 22077)
+
+

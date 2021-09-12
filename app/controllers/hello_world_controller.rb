@@ -5,6 +5,6 @@ class HelloWorldController < ApplicationController
 
   def index
     @hello_world_props = { name: "Stranger" }
-    @list_of_names_props = { names: ["aaron","ryan","becky"] }
+    @list_of_names_props = { people: Person.select(:name) }
   end
 end

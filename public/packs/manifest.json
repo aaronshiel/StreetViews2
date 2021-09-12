@@ -28,15 +28,15 @@
     },
     "hello-world-bundle": {
       "js": [
-        "/packs/js/hello-world-bundle-f8737ecb5f34851d7260.js"
+        "/packs/js/hello-world-bundle-2ac7c64234d7b389136c.js"
       ],
       "js.map": [
-        "/packs/js/hello-world-bundle-f8737ecb5f34851d7260.js.map"
+        "/packs/js/hello-world-bundle-2ac7c64234d7b389136c.js.map"
       ]
     }
   },
-  "hello-world-bundle.js": "/packs/js/hello-world-bundle-f8737ecb5f34851d7260.js",
-  "hello-world-bundle.js.map": "/packs/js/hello-world-bundle-f8737ecb5f34851d7260.js.map",
+  "hello-world-bundle.js": "/packs/js/hello-world-bundle-2ac7c64234d7b389136c.js",
+  "hello-world-bundle.js.map": "/packs/js/hello-world-bundle-2ac7c64234d7b389136c.js.map",
   "hello_react.js": "/packs/js/hello_react-6a93156487ecb4fd6346.js",
   "hello_react.js.map": "/packs/js/hello_react-6a93156487ecb4fd6346.js.map",
   "hello_typescript.js": "/packs/js/hello_typescript-62a7ba3025e0004166d6.js",
